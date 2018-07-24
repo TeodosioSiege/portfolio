@@ -1,0 +1,45 @@
+html {
+	height: 100vh;
+}
+
+body {
+	margin-top: 60px;
+	background-color: #347B98;
+}
+
+#dp {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+
+	background: linear-gradient(to bottom right, #D4F7EC,#448D76) !important;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+ul > li {
+	list-style: none;
+}
+
+.social {
+	padding: 0 !important;
+	font-size: 30px;
+	text-align: center;
+}
+.social > li {
+	display: inline-block;
+}
+
+.social > li > a, strong, h4, h3, a {
+	color: #110934 !important;
+	text-shadow: 0 4px 8px  rgba(0, 0, 0, 0.11), 0 6px 20px  rgba(0, 0, 0, 0.1) !important;
+}
+
+
+.portfolio {
+	margin-bottom: 40px;
+}
+
+.portfolio img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}

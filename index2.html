@@ -26,6 +26,7 @@
 			border: 0;
 			padding: 0;
 			margin: 0;
+			rgba(0,0,0,0.2);
 		}
 		div {
 			display: flex;
@@ -45,13 +46,25 @@
 			background-image: url("assets/parallax1.jpg");
 			background-size: cover;
 		}
+		/*div:nth-child(2) {
+			background: #2d5b6b;
+		}*/
+		div:nth-child(3) {
+			height: 400px;
+			background-image: url("assets/parallax2.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		/*div:nth-child(4) {
+			background: #8f4731;
+		}*/
 	</style>
 </head>
 
 
 <body>
 
-<div>
+<div id="parallax">
 	<h2>Div 1</h2>
 </div>
 
@@ -67,6 +80,13 @@
 	<h2>Div 4</h2>
 </div>
 
+<script type="text/javascript">
+	const parallax = document.getElementById("parallax");
 
+	window.addEventListener("scroll", function(){
+		let offset = window.pageYOffset;
+		parallax.style.backgroundPositionY = offset * 0.7 + "px";
+	})
+</script>
 </body>
 </html>

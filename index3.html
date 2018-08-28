@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<title> Siege Teodosio | Full Stack Web Developer</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<!-- fontawesome library-->
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<!-- jquery Bootstrap plugins -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- include all compiled plugins -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/script.js"></script>
+
+	<style type="text/css">
+		*{
+				border: 0;
+				padding: 0;
+				margin: 0;
+			}
+		.contain {
+			width: 100%;
+			height: 100vh;
+			font-weight: bold !important;
+		}
+		h2 {
+			font-size: 60px;
+			background: #eee;
+			padding: 8px 24px;
+			border-radius: 16px;
+			width: 33%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.row div:nth-child(1) {
+			background-image: url("assets/parallax1.jpg");
+			background-size: cover;
+		}
+		.row div:nth-child(3) {
+			background-image: url("assets/parallax2.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.row div:nth-child(2) {
+			background-image: url("assets/background2.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.row div:nth-child(4) {
+			background-image: url("assets/background3.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.row div {
+			padding: 50vh 0;
+		}
+	</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container-fluid">
+	
+<nav class="navbar navbar-expand-md fixed-top navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Siege Teodosio</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#parallax">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portforlio">Portfolio</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li> 
+    </ul>
+  </div> 
+</nav>
+
+<div class="row">
+	<div class="col-12 contain" id="parallax"><h2 class="text-center">DIV1</h2></div>
+	<div class="col-12 contain" id="about"><h2 class="text-center">DIV2</h2></div>
+	<div class="col-12 contain" id="portforlio"><h2 class="text-center">DIV3</h2></div>
+	<div class="col-12 contain" id="contact"><h2 class="text-center">DIV4</h2></div>
+</div>
+
+</div> <!-- end container-->
+
+
+<script type="text/javascript">
+	const parallax = document.getElementById("parallax");
+
+	window.addEventListener("scroll", function(){
+		let offset = window.pageYOffset;
+		parallax.style.backgroundPositionY = offset * 0.7 + "px";
+	})
+</script>
+	</body>
+</html>

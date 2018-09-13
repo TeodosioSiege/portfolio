@@ -80,13 +80,24 @@
 		#about section {
 			background-color: rgba( 1,1,1,0.05);
 		}
+		#portfolio {
+			padding: 30vh 0 10vh !important;
+		}
+		.boxshadow {
+			width: 100%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+			text-align: center;
+			}
+		.boxshadow:hover {
+    		box-shadow: 0 8px 16px 0 rgba(0, 100, 100, 0.6), 0 12px 40px 0 rgba(0, 100, 100, 0.59);	
+		}
 		@media screen and (max-width: 576px) {
 			#about {
 				background-position: 50% 50%;
-			}
+			}/*
 			#contact {
 				background-position: 40% 50%;
-			}
+			}*/
 			#portfolio {
 				padding: 10vh 0!important;
 			}
@@ -121,10 +132,10 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#portfolio">Portfolio</a>
-      </li> 
+      </li> <!-- 
       <li class="nav-item">
         <a class="nav-link" href="#contact">Contact</a>
-      </li> 
+      </li>  -->
     </ul>
   </div> 
 </nav>
@@ -152,36 +163,36 @@
 		<section class="container">
 		<section class="row">
 			<section class="col-12 col-md-6">
-				<h1>Christoper John Teodosio</h1>
-				<h3>Personal Information</h3>
+				<h1 class="text-primary">Christoper John Teodosio</h1>
+				<h3 class="text-secondary">Personal Information</h3>
 
-				<strong>Birthday:</strong>February 15, 1991<br>
-				<strong>Citizenship:</strong> Filipino<br>
-				<strong>Address:</strong> #28 Alley 14 Road 13 
+				<strong class="text-secondary">Birthday: </strong>February 15, 1991<br>
+				<strong class="text-secondary">Citizenship: </strong> Filipino<br>
+				<strong class="text-secondary">Address: </strong> #28 Alley 14 Road 13 
 				Bagong Pag asa, Quezon City
 
 				<br><br>
 
 				<h3>Educational Background</h3>
 
-				<strong>University of Caloocan City</strong>
+				<strong class="text-secondary">University of Caloocan City</strong>
 				<small>(batch 2011)</small> <br>
 				B.S. Psychology major in Guidance and Counseling<br>
 				Cum Laude<br><br>
-				<h3>Work Experience</h3>
-				<strong>Transaction Processing Representative</strong><small>(2011-present)</small><br>
+				<h3 class="text-secondary">Work Experience</h3>
+				<strong  class="text-secondary">Transaction Processing Representative</strong><small>(2011-present)</small><br>
 				ACCENTURE, INC, Global One, E-Commerce Road, Eastwood City, Libis, Quezon City. <br>
-				<h3>Technical Skills</h3>
+				<h3  class="text-secondary">Technical Skills</h3>
 				<ul>
-				<li>HTML & CSS|Bootstrap</li>
-				<li>Javascript|jQuery|AJAX</li>
+				<li>HTML & CSS | Bootstrap</li>
+				<li>Javascript | jQuery  |AJAX</li>
 				<li>MySQL</li>
-				<li>PHP|Laravel Framework</li>
+				<li>PHP | Laravel Framework</li>
 				</ul>
 			</section>
 			<section class="col-12 col-md-6 order-first order-md-last justify-content-center">
 				<img src="assets/Teodosio.jpg" class="rounded-circle mx-auto d-block" id="dp"><br>
-				<p class="text-justify">Hi! You can call me <strong>Siege Teodosio</strong>. I recently participated on Tuitt Coding Bootcamp in order to be a Full Stack Web Developer. Please see below for my  most recent works. </p>
+				<p class="text-justify">Hi! You can call me <strong class="text-primary">Siege Teodosio</strong>. I recently participated on <strong class="text-primary">Tuitt Coding Bootcamp</strong> in order to be a Full Stack Web Developer. Please see <a href="#portfolio" class="text-primary">below</a> for my  most recent works. </p>
 				<br>
 			</section>
 		</section></section>
@@ -189,41 +200,44 @@
 	<div class="col-12 contain" id="portfolio">
 		<section class="container">
 			<h1 class="text-center" style="font-size: 60px;color: white;">Porfolio</h1>
-			<h3 class="text-center" style="color: white;">Below are some of my recent works</h3>
+			<h3 class="text-center" style="color: white;">Below are some of my recent works</h3><hr><br>
 			<section class="row">
 				<section class="col-12 col-md-4 text-center">
-					<section class="card">
-						<img class="card-img-top" src="assets/capstone1.JPG">
+					<section class="card boxshadow">
+						<a href="https://teodosiosiege.github.io/Cubeseeker/index.html" target="_blank">
+						<img class="card-img-top" src="assets/capstone1.JPG"></a>
 						<section class="card-body">
 							<h4 class="card-title">Cubeseeker</h4>
 							<small>Rubik's cube blog and specialty store</small>
 							<p class="card-text">Bootstrap 3</p>
 						</section>
-					</section>
+					</section><br><br>
+				</section>
+				<section class="col-12 col-md-4 text-center">
+					<section class="card boxshadow">
+						<a href="https://musicore.000webhostapp.com" target="_blank">
+						<img class="card-img-top" src="assets/capstone2.JPG"></a>
+						<section class="card-body">
+							<h4 class="card-title">Musicore</h4>
+							<small>e-commerce site</small>
+							<p class="card-text">Bootstrap 3, Javascript & PHP</p>
+						</section>
+					</section><br><br>
 				</section><br><br>
 				<section class="col-12 col-md-4 text-center">
-					<section class="card">
-						<img class="card-img-top" src="assets/capstone1.JPG">
+					<section class="card boxshadow">
+						<a href="https://finessa.000webhostapp.com" target="_blank">
+						<img class="card-img-top" src="assets/capstone3.JPG"></a>
 						<section class="card-body">
-							<h4 class="card-title">Cubeseeker</h4>
-							<small>Rubik's cube blog and specialty store</small>
-							<p class="card-text">Bootstrap 3</p>
+							<h4 class="card-title">Finessa Aesthetica</h4>
+							<small>company career page</small>
+							<p class="card-text">Bootstrap 4 & Laravel Framework</p>
 						</section>
-					</section>
-				</section><br><br>
-				<section class="col-12 col-md-4 text-center">
-					<section class="card">
-						<img class="card-img-top" src="assets/capstone1.JPG">
-						<section class="card-body">
-							<h4 class="card-title">Cubeseeker</h4>
-							<small>Rubik's cube blog and specialty store</small>
-							<p class="card-text">Bootstrap 3</p>
-						</section>
-					</section>
+					</section><br><br>
 				</section><br><br>
 			</section>
 	</div>
-	<div class="col-12 contain" id="contact"><h2 class="text-center">DIV4</h2></div>
+<!-- 	<div class="col-12 contain" id="contact"><h2 class="text-center">DIV4</h2></div> -->
 </div>
 
 </div> <!-- end container-->

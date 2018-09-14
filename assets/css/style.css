@@ -1,45 +1,97 @@
-html {
-	height: 100vh;
+		*{
+				border: 0;
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+		html {
+			min-height: 100%;
+		}
+		.contain {
+			width: 100%;
+			height: 100%;
+			font-weight: bold !important;
+		}
+		.row div:nth-child(1) {
+			background-image: url("../parallax1.jpg");
+			background-size: cover;
+		}
+		.row div:nth-child(3) {
+			background-image: url("../parallax2.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.row div:nth-child(2) {
+			background-image: url("../background2-1.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.row div:nth-child(4) {
+			background-image: url("../background3.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.row div {
+			padding: 50vh 0;
+			min-height: 100%;
+		}
+		hr {
+			border-color: white;
+			width: 66%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.jumbotron {
+			background-color: rgba(0,0,0,0);
+			color: white;
+		}
+		#about  {
+			padding: 20vh 0!important;
+			color: white;
+			background-color: rgba( 1,1,1,0.5);
+			min-height: 110vh;
+			max-height: 200vh;
+			font-family: "calibri"!important;
+			font-weight: normal!important;
+			
+		}
+		#about h1 {
+			color: #738cab!important;
+		}
+		#about h3, #about strong {
+			color:#3c5071!important;
+		}
+		#about section {
+			background-color: rgba( 1,1,1,0.05);
+		}
+		#portfolio {
+			padding: 15vh 0 10vh !important;
+		}
+		.boxshadow {
+			width: 100%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+			text-align: center;
+			}
+		.boxshadow:hover {
+    		box-shadow: 0 8px 16px 0 rgba(0, 100, 100, 0.6), 0 12px 40px 0 rgba(0, 100, 100, 0.59);	
+		}
+		@media screen and (max-width: 576px) {
+			#about {
+				background-position: 50% 50%;
+				max-height: 250vh;
+			}/*
+			#contact {
+				background-position: 40% 50%;
+			}*/
+			#portfolio {
+				padding: 10vh 0!important;
+			}
+		}
+
+#header {
+	margin-top: -170px!important;
 }
 
-body {
-	margin-top: 60px;
-	background-color: #347B98;
-}
-
-#dp {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card {
-
-	background: linear-gradient(to bottom right, #D4F7EC,#448D76) !important;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-}
-
-ul > li {
-	list-style: none;
-}
-
-.social {
-	padding: 0 !important;
-	font-size: 30px;
-	text-align: center;
-}
-.social > li {
-	display: inline-block;
-}
-
-.social > li > a, strong, h4, h3, a {
-	color: #110934 !important;
-	text-shadow: 0 4px 8px  rgba(0, 0, 0, 0.11), 0 6px 20px  rgba(0, 0, 0, 0.1) !important;
-}
-
-
-.portfolio {
-	margin-bottom: 40px;
-}
-
-.portfolio img {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+#header h1 {
+	font-size: 60px!important;
 }

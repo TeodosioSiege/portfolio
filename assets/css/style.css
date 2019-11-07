@@ -1,5 +1,11 @@
 /* 	1. Global Styles */
-		
+:root {
+	--sans-serif: 'Lato';
+	--bg-color: hsl(180, 76%, 36%);
+	--shade: hsl(180, 66%, 25%);
+	--color: hsl(180, 100%, 98%);
+	--accent: hsl(0, 66%, 30%);
+}		
 *{
 	padding: 0;
 	margin: 0;
@@ -10,12 +16,34 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* 2. Typography Styles */
 
-		.contain {
-			width: 100%;
-			height: 100%;
-			font-weight: bold !important;
-		}
+body, ::placeholder {
+	font-family: var(--sans-serif, 'sans serif');
+	background-color: var(--bg-color);
+	color: var(--color);
+}
+
+footer {
+	background-color: var(--shade);
+}
+
+a {
+	color: var(--accent);
+}
+
+.btn-accent {
+	background-color: var(--accent);
+	color: var(--color);
+}
+
+
+
+/* .contain {
+	width: 100%;
+	height: 100%;
+	font-weight: bold !important;
+} */
 /* #parallax {
 	position: relative;
 }
@@ -42,72 +70,54 @@ html {
 
 
 
+#welcome-section {
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom:0;
+	right: 0;
+	margin: 0 auto;
+}		
+.row div {
+	/* padding: 50vh 0; */
+	min-height: 100vh;
+}
+hr {
+	border-color: var(--color);
+	width: 66%;
+	margin: 16px auto;
+}
+.jumbotron {
+	background-color: var(--shade);
+}
+#about  {
+	padding: 20vh 0!important;
+	min-height: 110vh;
+	max-height: 500vh;
+	
+}
 
-		#welcome-section {
-			height: 100vh;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom:0;
-			right: 0;
-			margin: 0 auto;
-		}		
-		.row div {
-			/* padding: 50vh 0; */
-			min-height: 100vh;
-		}
-		hr {
-			border-color: white;
-			width: 66%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.jumbotron {
-			background-color: rgba(0,0,0,0);
-			color: white;
-		}
-		#about  {
-			padding: 20vh 0!important;
-			color: white;
-			background-color: rgba( 1,1,1,0.5);
-			min-height: 110vh;
-			max-height: 500vh;
-			font-family: "calibri"!important;
-			font-weight: normal!important;
-			
-		}
-		#about h1 {
-			color: #738cab!important;
-		}
-		#about h3, #about strong {
-			color:#738cab!important;
-		}
-		#about section {
-			background-color: rgba( 1,1,1,0.05);
-		}
-		#projects {
-			padding: 15vh 0 10vh !important;
-		}
-		.project-tile {
-			width: 100%;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
-			text-align: center;
-			}
-		.project-tile:hover {
-    		box-shadow: 0 8px 16px 0 rgba(0, 100, 100, 0.6), 0 12px 40px 0 rgba(0, 100, 100, 0.59);	
-		}
-		@media screen and (max-width: 576px) {
-			#about {
-				background-position: 50% 50%;
-				max-height: 250vh;
-			}/*
-			#contact {
-				background-position: 40% 50%;
-			}*/
-			#projects {
-				padding: 10vh 0!important;
-			}
-		}
+#projects {
+	padding: 15vh 0 10vh !important;
+}
+.project-tile {
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+	text-align: center;
+	}
+.project-tile:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 100, 100, 0.6), 0 12px 40px 0 rgba(0, 100, 100, 0.59);	
+}
+@media screen and (max-width: 576px) {
+	#about {
+		background-position: 50% 50%;
+		max-height: 250vh;
+	}
+	#projects {
+		padding: 10vh 0!important;
+	}
+}
 
 #header {
 	height: 100vh;

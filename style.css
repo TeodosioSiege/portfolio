@@ -1,0 +1,39 @@
+/* 1. Global Styles */
+/* :root {
+    --serif: ;
+    --sans-serif: ;
+    --bg-color:;
+    --color:;
+    --accent:;
+    --tint:;
+} */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+#welcome-section {
+    height: 100vh;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+@media (min-width: 1024px) {
+    .project-tile {
+        width: 33%;
+    }
+}

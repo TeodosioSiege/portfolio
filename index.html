@@ -9,11 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 		<!-- fontawesome library-->
 	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	<!-- fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	<!-- jquery Bootstrap plugins -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -22,7 +19,6 @@
 	<script src="assets/js/script.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 
 
@@ -31,9 +27,9 @@
 
 <div class="container-fluid">
 	
-<nav class="navbar navbar-expand-md fixed-top navbar-dark">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark" id="navbar">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">Siege Teodosio</a>
+  <!-- <a  href="#">Siege Teodosio</a> -->
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -50,7 +46,7 @@
         <a class="nav-link" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#projects">Projects</a>
       </li> <!-- 
       <li class="nav-item">
         <a class="nav-link" href="#contact">Contact</a>
@@ -59,28 +55,28 @@
   </div> 
 </nav>
 
-<div class="row">
+<div class="parallax-container">
 	<div class="col-12 contain" id="parallax">
-		<section class="container">
+		<section class="container" id="welcome-section">
 			<section class="jumbotron text-center" id="header">
 				<h1>Siege Teodosio</h1>
-				<h3>Full Stack Web Developer</h3>
+				<h2>Full Stack Web Developer</h2>
 				<hr>
-				<section class="row">
+				<section class="row row--margin-removal">
 					<section class="col-8 offset-2">
 						<section class="row">
-						<section class="col-12 col-md-4"><a class="btn btn-primary btn-block" href="https://web.facebook.com/siegesleight" target="_blank"><span class="fa fa-facebook"></span> Facebook</a></section>
-						<section class="col-12 col-md-4"><a class="btn btn-primary btn-block" href="https://github.com/TeodosioSiege" target="_blank"><span class="fa fa-github"></span> Github</a></section>
-						<section class="col-12 col-md-4"><a class="btn btn-primary btn-block" href="https://www.linkedin.com/in/christoper-john-teodosio-037525154/" target="_blank"><span class="fa fa-linkedin"></span> Linkedin</a></section>
+						<section class="col-12 col-md-4"><a class="btn btn-accent btn-block" href="https://web.facebook.com/siegesleight" target="_blank"><span class="fa fa-facebook"></span> Facebook</a></section>
+						<section class="col-12 col-md-4"><a class="btn btn-accent btn-block" href="https://github.com/TeodosioSiege" target="_blank" id="profile-link"><span class="fa fa-github"></span> Github</a></section>
+						<section class="col-12 col-md-4"><a class="btn btn-accent btn-block" href="https://www.linkedin.com/in/christoper-john-teodosio-037525154/" target="_blank"><span class="fa fa-linkedin"></span> Linkedin</a></section>
 						</section>	
 					</section>
-				</section> <!-- end row links -->
+				</section> 
 			</section>
 		</section>
 	</div>
-	<div class="col-12 contain justify-content-center" id="about">
-		<section class="container">
-		<section class="row">
+	<div class="row row--margin-removal">
+	<div class="col-12 justify-content-center" id="about">
+		<section class="row row--margin-removal">
 			<section class="col-12 col-md-6">
 				<h1>Christoper John Teodosio</h1>
 				<h3>Personal Information</h3>
@@ -111,23 +107,25 @@
 			</section>
 			<section class="col-12 col-md-6 order-first order-md-last justify-content-center">
 				<img src="assets/Teodosio.jpg" class="rounded-circle mx-auto d-block" id="dp"><br>
-				<p class="text-justify">Hi! You can call me <strong style="color: #738cab;">Siege Teodosio</strong>. I recently participated on <strong style="color: #738cab;">Tuitt Coding Bootcamp</strong> in order to be a Full Stack Web Developer. Please see <a href="#portfolio" style="color: #738cab;">below</a> for my  most recent works. </p>
+				<p class="text-justify">Hi! You can call me <strong>Siege Teodosio</strong>. I recently participated on <strong>Tuitt Coding Bootcamp</strong> in order to be a Full Stack Web Developer. Please see <a href="#portfolio">below</a> for my  most recent works. </p>
 				<br>
 				<section class="text-left">
 				<h3>Contact Information</h3>
 				<p><i class="fa fa-phone"></i> 0936-9646432</p>
 <p><i class="fa fa-envelope-o"></i> siegeteodosio15@gmail.com</p>
-<p><a href="assets/Teodosio,Christoper.pdf" target="_blank" class="btn btn-primary text-white"><i class="fa fa-download"></i> download resume</a></p></section>
+<p><a href="assets/Teodosio,Christoper.pdf" target="_blank" class="btn btn-accent"><i class="fa fa-download"></i> download resume</a></p></section>
 			</section>
-		</section></section>
+		</section>
 	</div>
-	<div class="col-12 contain" id="portfolio">
+</div>
+<div class="row row--margin-removal">
+	<div class="col-12" id="projects">
 		<section class="container">
-			<h1 class="text-center" style="font-size: 60px;color: white;">Portfolio</h1>
-			<h3 class="text-center" style="color: white;">Below are some of my recent works</h3><hr><br>
+			<h1 class="text-center">Projects</h1>
+			<h3 class="text-center">Below are some of my recent works</h3><hr><br>
 			<section class="row">
 				<section class="col-12 col-md-4 text-center">
-					<section class="card boxshadow">
+					<section class="card  project-tile">
 						<a href="https://teodosiosiege.github.io/Cubeseeker/index.html" target="_blank">
 						<img class="card-img-top" src="assets/capstone1.JPG"></a>
 						<section class="card-body">
@@ -138,7 +136,7 @@
 					</section><br><br>
 				</section>
 				<section class="col-12 col-md-4 text-center">
-					<section class="card boxshadow">
+					<section class="card  project-tile">
 						<a href="https://musicore.000webhostapp.com" target="_blank">
 						<img class="card-img-top" src="assets/capstone2.JPG"></a>
 						<section class="card-body">
@@ -149,7 +147,7 @@
 					</section><br><br>
 				</section><br><br>
 				<section class="col-12 col-md-4 text-center">
-					<section class="card boxshadow">
+					<section class="card  project-tile">
 						<a href="https://finessa.000webhostapp.com" target="_blank">
 						<img class="card-img-top" src="assets/capstone3.JPG"></a>
 						<section class="card-body">
@@ -161,12 +159,12 @@
 				</section><br><br>
 			</section>
 	</div>
-<!-- 	<div class="col-12 contain" id="contact"><h2 class="text-center">DIV4</h2></div> -->
+</div>
 </div>
 
 </div> <!-- end container-->
 
-<footer style="background: black;color:white;padding-top: 20px;	">
+<footer>
 	<section class="container"><p>Copyright &copy; Siege Teodosio</p>
 
 	</section>
@@ -180,5 +178,7 @@
 		parallax.style.backgroundPositionY = offset * 0.7 + "px";
 	})
 </script>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>

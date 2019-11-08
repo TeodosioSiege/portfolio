@@ -126,25 +126,24 @@ hr {
 }
 
 #header {
-	margin-top: -170px!important;
+	height: 33vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom:0;
+	right: 0;
+	margin: auto;
+}
+.jumbotron {
+	background-color: transparent;
+	padding: 0;
 }
 
-#projects {
-	padding: 15vh 0 10vh;
-	background-color: var(--bg-color--alpha);
-}
-
-footer  .container {
-	padding-top: 1em;
-}
-
-#projects {
-	padding: 15vh 0 10vh;
-	background-color: var(--bg-color--alpha);
-}
-
-footer  .container {
-	padding-top: 1em;
+#about  {
+	padding: 10vh 2em;
+	line-height: 1.75;
+	background-color: var(--color--alpha);
+	color: var(--bg-color);
 }
 
 #projects {
@@ -191,6 +190,7 @@ footer  .container {
 	}
 }
 
-.card-body {
-	max-height: 20vh!important;
-}
+
+
+
+

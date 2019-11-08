@@ -1,101 +1,176 @@
-		*{
-				border: 0;
-				padding: 0;
-				margin: 0;
-				box-sizing: border-box;
-			}
-		html {
-			min-height: 100%;
-			background-color: black;
-			scroll-behavior: smooth;
-		}
-		.contain {
-			width: 100%;
-			height: 100%;
-			font-weight: bold !important;
-		}
-		.row div:nth-child(1) {
-			background-image: url("../parallax1.jpg");
-			background-size: cover;
-		}
-		.row div:nth-child(3) {
-			background-image: url("../parallax2.jpg");
-			background-attachment: fixed;
-			background-size: cover;
-		}
-		.row div:nth-child(2) {
-			background-image: url("../background2-1.jpg");
-			background-attachment: fixed;
-			background-size: cover;
-		}
-		.row div:nth-child(4) {
-			background-image: url("../background3.jpg");
-			background-attachment: fixed;
-			background-size: cover;
-		}
-		.row div {
-			padding: 50vh 0;
-			min-height: 100vh;
-		}
-		hr {
-			border-color: white;
-			width: 66%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.jumbotron {
-			background-color: rgba(0,0,0,0);
-			color: white;
-		}
-		#about  {
-			padding: 20vh 0!important;
-			color: white;
-			background-color: rgba( 1,1,1,0.5);
-			min-height: 110vh;
-			max-height: 500vh;
-			font-family: "calibri"!important;
-			font-weight: normal!important;
-			
-		}
-		#about h1 {
-			color: #738cab!important;
-		}
-		#about h3, #about strong {
-			color:#738cab!important;
-		}
-		#about section {
-			background-color: rgba( 1,1,1,0.05);
-		}
-		#portfolio {
-			padding: 15vh 0 10vh !important;
-		}
-		.boxshadow {
-			width: 100%;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
-			text-align: center;
-			}
-		.boxshadow:hover {
-    		box-shadow: 0 8px 16px 0 rgba(0, 100, 100, 0.6), 0 12px 40px 0 rgba(0, 100, 100, 0.59);	
-		}
-		@media screen and (max-width: 576px) {
-			#about {
-				background-position: 50% 50%;
-				max-height: 250vh;
-			}/*
-			#contact {
-				background-position: 40% 50%;
-			}*/
-			#portfolio {
-				padding: 10vh 0!important;
-			}
-		}
+/* 	1. Global Styles */
+:root {
+	--sans-serif: 'Lato';
+	--bg-color: hsl(195, 94%, 13%);
+	--bg-color--alpha: hsla(195, 94%, 13%, 0.5);
+	--color: hsl(190, 60%, 50%);
+	--color--alpha: hsla(180, 100%, 90%, 0.6);
+	--tint: #84DCC6;
+}		
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	}
+html {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+}
+
+/* 2. Typography Styles */
+
+body, ::placeholder {
+	font-family: var(--sans-serif, 'sans serif');
+	background-color: var(--bg-color);
+	color: var(--color);
+}
+#collapsibleNavbar {
+	background-color: var(--bg-color--alpha);
+}
+
+#collapsibleNavbar * {
+	color: var(--color);
+	font-size: 1.5rem;
+}
+
+#collapsibleNavbar a.active {
+	color: var(--tint);
+}
+
+
+#collapsibleNavbar a:hover {
+	color: white;
+  }
+
+a {
+	color: var(--tint);
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.btn-accent {
+	background-color: var(--tint);
+	color: var(--bg-color);
+}
+
+#about .btn-accent {
+	color: var(--tint);
+	background-color: var(--bg-color);
+}
+
+.card-body {
+	color: var(--bg-color);
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+
+hr {
+	border-color: var(--color);
+	width: 66%;
+	margin: 16px auto;
+}
+#header h1 {
+	font-size: 60px;
+}
+
+
+/* 3.Structure Styles */
+
+.container {
+	padding: 0 3em;
+	margin: 0;
+	max-width: 100vw;
+	overflow: hidden;
+}
+.row--margin-removal {
+	margin: 0;
+}
+
+
+
+.container-fluid {
+	padding: 0;
+}
+
+/* 4. Modules Styles */
+
+#parallax {
+	position: relative;
+	padding: 0;
+}
+.parallax-container>div:nth-child(1) {
+	background-image: url("../parallax1.jpg");
+	background-size: cover;
+}
+.parallax-container>div:nth-child(3) {
+	background-image: url("../background2-1.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+.parallax-container>div:nth-child(2) {
+	background-image: url("../parallax2.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#welcome-section {
+	height: 100vh;
+	width: 100%;
+	background-color: var(--bg-color--alpha);
+}
 
 #header {
 	margin-top: -170px!important;
 }
 
-#header h1 {
-	font-size: 60px!important;
+#projects {
+	padding: 15vh 0 10vh;
+	background-color: var(--bg-color--alpha);
+}
+
+footer  .container {
+	padding-top: 1em;
+}
+
+
+@media (min-width: 480px) {
+	#about {
+		line-height: 1.5;
+	}
+}
+
+
+
+
+
+
+
+
+
+}
+.project-tile {
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+	text-align: center;
+	}
+.project-tile:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 100, 100, 0.6), 0 12px 40px 0 rgba(0, 100, 100, 0.59);	
+}
+
+
+@media screen and (max-width: 576px) {
+	#about {
+		background-position: 50% 50%;
+	}
+	#projects {
+		padding: 10vh 0;
+	}
 }
 
 .card-body {

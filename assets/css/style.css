@@ -4,6 +4,7 @@
 	--bg-color: hsl(195, 94%, 13%);
 	--bg-color--alpha: hsla(195, 94%, 13%, 0.5);
 	--color: hsl(190, 60%, 50%);
+	--color--alpha: hsla(180, 100%, 90%, 0.6);
 	--tint: #84DCC6;
 }		
 *{
@@ -23,6 +24,10 @@ body, ::placeholder {
 	background-color: var(--bg-color);
 	color: var(--color);
 }
+#collapsibleNavbar {
+	background-color: var(--bg-color--alpha);
+}
+
 #collapsibleNavbar * {
 	color: var(--color);
 	font-size: 1.5rem;
@@ -49,6 +54,11 @@ a:hover {
 .btn-accent {
 	background-color: var(--tint);
 	color: var(--bg-color);
+}
+
+#about .btn-accent {
+	color: var(--tint);
+	background-color: var(--bg-color);
 }
 
 .card-body {
@@ -130,8 +140,10 @@ hr {
 }
 
 #about  {
-	padding: 10vh 0;
+	padding: 10vh 2em;
 	line-height: 1.75;
+	background-color: var(--color--alpha);
+	color: var(--bg-color);
 }
 
 @media (min-width: 480px) {

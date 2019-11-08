@@ -109,12 +109,12 @@ hr {
 	background-size: cover;
 }
 .parallax-container>div:nth-child(3) {
-	background-image: url("../parallax2.jpg");
+	background-image: url("../background2-1.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 }
 .parallax-container>div:nth-child(2) {
-	background-image: url("../background2-1.jpg");
+	background-image: url("../parallax2.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -146,6 +146,16 @@ hr {
 	color: var(--bg-color);
 }
 
+#projects {
+	padding: 15vh 0 10vh;
+	background-color: var(--bg-color--alpha);
+}
+
+footer  .container {
+	padding-top: 1em;
+}
+
+
 @media (min-width: 480px) {
 	#about {
 		line-height: 1.5;
@@ -159,8 +169,7 @@ hr {
 
 
 
-#projects {
-	padding: 15vh 0 10vh !important;
+
 }
 .project-tile {
 	width: 100%;
@@ -170,12 +179,14 @@ hr {
 .project-tile:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 100, 100, 0.6), 0 12px 40px 0 rgba(0, 100, 100, 0.59);	
 }
+
+
 @media screen and (max-width: 576px) {
 	#about {
 		background-position: 50% 50%;
 	}
 	#projects {
-		padding: 10vh 0!important;
+		padding: 10vh 0;
 	}
 }
 

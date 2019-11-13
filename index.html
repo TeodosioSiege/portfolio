@@ -55,8 +55,8 @@
   </div> 
 </nav>
 
-<div class="parallax-container">
-	<div class="col-12 contain" id="parallax">
+<div class="parallax-container" id="fullPage">
+	<div class="col-12 contain section" id="parallax">
 		<section class="container" id="welcome-section">
 			<section class="jumbotron text-center" id="header">
 				<h1>Siege Teodosio</h1>
@@ -74,7 +74,7 @@
 			</section>
 		</section>
 	</div>
-	<div class="row row--margin-removal">
+	<div class="row row--margin-removal section">
 	<div class="col-12 justify-content-center" id="about">
 		<section class="row row--margin-removal row--width-80">
 			<section class="col-12 col-md-6">
@@ -118,7 +118,7 @@
 		</section>
 	</div>
 </div>
-<div class="row row--margin-removal">
+<div class="row row--margin-removal section">
 	<div class="col-12" id="projects">
 		<section class="container row--width-80-xl">
 			<h1 class="text-center">Projects</h1>
@@ -178,7 +178,18 @@
 		parallax.style.backgroundPositionY = offset * 0.7 + "px";
 	})
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
 <!-- 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+<script>
+new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	licenseKey:'GPLv3' 
+})
+
+//methods
+//fullpage_api.setAllowScrolling(false);
+</script>
 	</body>
 </html>

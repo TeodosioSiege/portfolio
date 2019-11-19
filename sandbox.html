@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smooth Scroll Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #333;
+            color: #fff;
+            line-height: 1.6;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            width: 100%;
+            height: 4em;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: center;
+        }
+        .navbar ul li {
+            margin: 0 1rem;
+            padding: 1rem;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #f4f4f4;
+        }
+        .navbar ul li a:hover {
+            color: skyblue;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            scroll-snap-align: center;
+        }
+        section h1 {
+            font-size: 4rem;
+        }
+        section p {
+            font-size: 1.5rem;
+        }
+        section#home {
+	        background:  linear-gradient(rgba(58, 255, 255, 0.3), rgba(56, 255, 255, 0.5)), url("./assets/parallax1.jpg") center/cover no-repeat fixed ;
+        } 
+        section#about {
+	        background: url("./assets/background2-1.jpg") center/cover no-repeat fixed;
+        }
+        section#service {
+	        background: url("./assets/parallax2.jpg") center/cover no-repeat fixed;
+        }
+        section#contact {
+	        background: url("./assets/background.jpg") center/cover no-repeat fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <h1>Welcome to my site</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cumque officia assumenda, nulla laboriosam distinctio.</p>
+        </section>
+        <section id="about">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cumque officia assumenda, nulla laboriosam distinctio.</p>
+        </section>
+        <section id="service">
+            <h1>Service</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cumque officia assumenda, nulla laboriosam distinctio.</p>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cumque officia assumenda, nulla laboriosam distinctio.</p>
+        </section>
+    </div>
+</body>
+</html>

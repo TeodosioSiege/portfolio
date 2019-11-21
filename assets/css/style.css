@@ -128,10 +128,11 @@ hr {
 
 
 @media (min-width: 1024px) {
-	.row--width-80-xl {
-		width: 80%;
+	.row--width-90-xl {
+		width: 90%;
 		margin: 0 auto;
 	}
+	
 }
 
 
@@ -202,8 +203,9 @@ footer  .container {
 		line-height: 1.5;
 	}
 }
-
-
+#projects {
+	min-height: 100vh;
+}
 
 
 /* 5. Components Style */
@@ -219,9 +221,9 @@ footer  .container {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
 	text-align: center;
 	}
-.project-tile:hover {
+/* .project-tile:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 100, 100, 0.6), 0 12px 40px 0 rgba(0, 100, 100, 0.59);	
-}
+} */
 
 
 @media screen and (max-width: 576px) {
@@ -232,7 +234,48 @@ footer  .container {
 		padding: 10vh 0;
 	}
 }
-
+.flip-card {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 1em;
+}
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.flip-card-inner, .flip-card-front, .flip-card-back {
+	border-radius: 3%;
+}
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+	backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.flip-card-front-1 {
+	background: url('../capstone1.JPG') center/contain no-repeat;
+}
+.flip-card-front-2 {
+	background: url('../capstone2.JPG') center/contain no-repeat;
+}
+.flip-card-front-3 {
+	background: url('../capstone3.JPG') center/contain no-repeat;
+}
+.flip-card-back {
+	transform: rotateY(180deg);
+	background-color: var(--tint);
+	color: var(--bg-color);
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
 
 

@@ -106,7 +106,11 @@ a:hover {
 			background-image: linear-gradient(to top right,var(--bg-color),rgb(0, 162, 255));
 			color: white;
 		}
-	
+	@media (max-width: 323px) {
+		.gradient-btn-dark {
+			font-size: 1.3rem;
+		}
+	}
 
 
 /* linear-gradient(to top right,var(--bg-color),rgb(0, 162, 255)); */

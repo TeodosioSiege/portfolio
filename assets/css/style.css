@@ -43,7 +43,7 @@ body, ::placeholder {
 	color: var(--color);
 }
 #collapsibleNavbar {
-	background-color: var(--bg-color--alpha);
+	text-shadow: 1px 1px 1px var(--bg-color);
 }
 
 #collapsibleNavbar * {

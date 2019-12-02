@@ -6,7 +6,12 @@
 	--color: hsl(190, 60%, 50%);
 	--color--alpha: hsla(180, 100%, 90%, 0.6);
 	--tint: #84DCC6;
-}		
+}
+@font-face {
+	font-family: Quantum;
+	src: url('../Quantum.otf');
+}
+
 *{
 	padding: 0;
 	margin: 0;
@@ -36,6 +41,11 @@ html {
 } */
 
 /* 2. Typography Styles */
+
+/* .jumbotron h1 {
+	font-family: Quantum, var(--sans-serif, 'sans serif');
+	text-transform: uppercase;
+} */
 
 body, ::placeholder {
 	font-family: var(--sans-serif, 'sans serif');
@@ -263,6 +273,11 @@ footer  .container {
 	min-height: 100vh;
 }
 
+
+.navbar-header {
+	margin-right: auto;
+	font-family: "Quantum", var(--sans-serif, "sans serif");
+}
 
 /* 5. Components Style */
 

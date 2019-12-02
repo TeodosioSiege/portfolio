@@ -271,10 +271,9 @@ footer  .container {
 }
 
 
-}
+
 .project-tile {
 	width: 100%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
 	text-align: center;
 	}
 
@@ -301,7 +300,7 @@ footer  .container {
 	transform-style: preserve-3d;
 }
 .flip-card-inner, .flip-card-front, .flip-card-back {
-	border-radius: 3%;
+	border-radius: 2px;
 }
 .flip-card:hover .flip-card-inner {
 	transform: rotateY(180deg);
@@ -313,17 +312,17 @@ footer  .container {
 	height: 100%;
 }
 .flip-card-front-1 {
-	background: url('../capstone1.JPG') center/contain no-repeat;
+	background: url('../capstone1.JPG') center/cover no-repeat;
 }
 .flip-card-front-2 {
-	background: url('../capstone2.JPG') center/contain no-repeat;
+	background: url('../capstone2.JPG') center/cover no-repeat;
 }
 .flip-card-front-3 {
-	background: url('../capstone3.JPG') center/contain no-repeat;
+	background: url('../capstone3.JPG') center/cover no-repeat;
 }
 .flip-card-back {
 	transform: rotateY(180deg);
-	background-color: var(--tint);
+	background-color: white;
 	color: var(--bg-color);
 	display:flex;
 	flex-direction: column;

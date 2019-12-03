@@ -272,7 +272,8 @@ footer  .container {
 #projects {
 	min-height: 100vh;
 }
-
+h1 {
+	font-family: "Quantum", var(--sans-serif, "sans serif");}
 
 .navbar-header {
 	margin-right: auto;

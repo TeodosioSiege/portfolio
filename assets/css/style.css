@@ -39,7 +39,7 @@ html {
 
 body,
 ::placeholder {
-  font-family: var(--sans-serif, "sans serif");
+  font-family: var(--sans-serif) "sans serif";
   background-color: var(--bg-color);
   color: var(--color);
 }
@@ -124,6 +124,7 @@ a:hover {
 @media (max-width: 323px) {
   .gradient-btn-dark {
     font-size: 1.2rem;
+    line-height: 1.5;
   }
 }
 
@@ -241,11 +242,13 @@ hr {
 
 #about {
   padding: 10vh 2em;
-  line-height: 1.75;
+  line-height: 2;
   background-color: var(--color--alpha);
   color: var(--bg-color);
 }
-
+#about a {
+  line-height: 1.5;
+}
 #projects {
   padding: 15vh 0 10vh;
   background-color: var(--bg-color--alpha);
@@ -257,7 +260,7 @@ footer .container {
 
 @media (min-width: 480px) {
   #about {
-    line-height: 1.5;
+    line-height: 2;
   }
 }
 #projects {

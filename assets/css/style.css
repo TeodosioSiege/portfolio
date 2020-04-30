@@ -1,6 +1,10 @@
 /* 	1. Global Styles */
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat/Montserrat-Medium.ttf");
+}
 :root {
-  --sans-serif: "Lato";
+  --sans-serif: "Montserrat";
   --bg-color: hsl(195, 94%, 13%);
   --bg-color--alpha: hsla(195, 94%, 13%, 0.5);
   --color: hsl(190, 60%, 85%);

@@ -314,12 +314,21 @@ footer .container {
   height: 100%;
 }
 .flip-card-front-1 {
-  background: url("../capstone1.JPG") center/cover no-repeat;
+  background: url("../tributePage.JPG") center/cover no-repeat;
 }
 .flip-card-front-2 {
-  background: url("../capstone2.JPG") center/cover no-repeat;
+  background: url("../surveyForm.JPG") center/cover no-repeat;
 }
 .flip-card-front-3 {
+  background: url("../landingPage.JPG") center/cover no-repeat;
+}
+.flip-card-front-4 {
+  background: url("../capstone1.JPG") center/cover no-repeat;
+}
+.flip-card-front-5 {
+  background: url("../capstone2.JPG") center/cover no-repeat;
+}
+.flip-card-front-6 {
   background: url("../capstone3.JPG") center/cover no-repeat;
 }
 .flip-card-back {
@@ -330,4 +339,7 @@ footer .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.card-text {
+  line-height: 2;
 }

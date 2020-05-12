@@ -1,4 +1,6 @@
+@import "reset";
+@import "config";
+
 body {
-  background: hsl(240, 81%, 44%);
-  color: white;
+  @include set-bg(white);
 }

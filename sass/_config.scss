@@ -1,0 +1,17 @@
+$pallete: (
+  primary: #1f689f,
+  translucent: hsla(206, 67%, 37%, 0.15),
+  dark: #195d91,
+);
+@function pallete($color) {
+  @return map-get($map: $pallete, $key: $color);
+}
+@mixin set-bg($color) {
+  @if lightness($color) > 70 {
+    background: $color;
+    color: pallete(primary);
+  } @else {
+    background: $color;
+    color: white;
+  }
+}

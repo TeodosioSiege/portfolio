@@ -5,8 +5,64 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat/Montserrat-Regular.ttf");
+}
+
 body {
   background: white;
   color: #1f689f;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: Montserrat, sans-serif;
+}
+
+.nav {
+  background: rgba(29, 97, 150, 0.63);
+  color: white;
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-brand {
+  font-weight: bold;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 66%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  height: 100vh;
+}
+
+.banner {
+  height: 75vh;
+  padding-top: 3rem;
 }
 /*# sourceMappingURL=main.css.map */

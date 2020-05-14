@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat/Montserrat-Regular.ttf");
+}
+
+$sans-serif: Montserrat, sans-serif;
+
 $pallete: (
   primary: #1f689f,
   translucent: hsla(206, 67%, 37%, 0.15),

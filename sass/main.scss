@@ -39,5 +39,50 @@ body {
 
 .banner {
   height: 75vh;
-  padding-top: 3rem;
+  padding: 3rem 1em 0;
+  @include set-bg(hsl(206, 67%, 37%));
+  background: linear-gradient(
+      hsla(206, 67%, 37%, 0.52),
+      hsla(206, 67%, 37%, 0.52)
+    ),
+    url("parallax1.jpg");
+  background-size: cover;
+  line-height: 1.5;
+  &-subheading {
+    color: #dfdbdb;
+    padding-top: 2em;
+    font-size: 1.25em;
+    font-weight: normal;
+  }
+  &-heading {
+    padding-top: 0.4em;
+    font-weight: normal;
+    padding-bottom: 0.5em;
+  }
+  &-button {
+    padding: 0.7em 1em;
+    outline: none;
+    border: none;
+    &--main {
+      @include set-bg(white);
+      border: pallete(primary);
+      &:hover {
+        background: darken(white, 5%);
+      }
+      &:active {
+        background: darken(white, 10%);
+      }
+    }
+    &--secondary {
+      @include set-bg(#0e4e6d);
+    }
+    &:focus {
+      outline: none;
+      border: none;
+    }
+    &:active {
+      outline: none;
+      border: none;
+    }
+  }
 }

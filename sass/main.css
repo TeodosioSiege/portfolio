@@ -22,6 +22,7 @@ body {
   background: rgba(29, 97, 150, 0.63);
   color: white;
   position: fixed;
+  z-index: 1;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,16 +114,28 @@ body {
 }
 
 .banner-button--main:hover {
-  background: #f2f2f2;
+  background: #deedf9;
 }
 
 .banner-button--main:active {
-  background: #e6e6e6;
+  background: #d5e9f7;
+  -webkit-transform: scaleY(0.98);
+          transform: scaleY(0.98);
 }
 
 .banner-button--secondary {
   background: #0e4e6d;
   color: white;
+}
+
+.banner-button--secondary:hover {
+  background: #146e9a;
+}
+
+.banner-button--secondary:active {
+  background: #136891;
+  -webkit-transform: scaleY(0.98);
+          transform: scaleY(0.98);
 }
 
 .banner-button:focus {

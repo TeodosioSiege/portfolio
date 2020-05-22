@@ -98,7 +98,7 @@ body {
 
 .banner {
   height: 75vh;
-  padding: 3rem 1em 0;
+  padding: 4rem 1.5em 0 1em;
   background: #1f679e;
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 103, 158, 0.52)), to(rgba(31, 103, 158, 0.52))), url("parallax1.jpg");
@@ -110,13 +110,14 @@ body {
 .banner-subheading {
   color: #dfdbdb;
   padding-top: 2em;
-  font-size: 1.25em;
+  font-size: 1rem;
   font-weight: normal;
 }
 
 .banner-heading {
   padding-top: 0.4em;
   font-weight: normal;
+  font-size: 1.5rem;
   padding-bottom: 0.5em;
 }
 

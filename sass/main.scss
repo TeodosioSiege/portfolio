@@ -1,5 +1,9 @@
 @import "reset";
 @import "config";
+html {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
 
 body {
   @include set-bg(white);
@@ -7,7 +11,9 @@ body {
   min-height: 100vh;
   font-family: $sans-serif;
 }
-
+.container {
+  overflow-x: hidden;
+}
 .nav {
   @include set-bg(hsla(206, 68%, 35%, 0.63));
   position: fixed;
@@ -43,7 +49,8 @@ body {
     position: absolute;
     bottom: 3em;
     left: 50%;
-    margin-left: -60px;
+    // margin-left: -60px;
+    transform: translateX(-50%);
     border: 5px solid rgb(219, 219, 219);
   }
   &-image {
@@ -108,3 +115,4 @@ body {
     }
   }
 }
+@import "about";

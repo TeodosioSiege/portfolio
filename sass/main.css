@@ -10,12 +10,21 @@
   src: url("./Montserrat/Montserrat-Regular.ttf");
 }
 
+html {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
 body {
   background: white;
   color: #1f689f;
   width: 100vw;
   min-height: 100vh;
   font-family: Montserrat, sans-serif;
+}
+
+.container {
+  overflow-x: hidden;
 }
 
 .nav {
@@ -58,7 +67,7 @@ body {
   height: 100vh;
 }
 
-.header {
+.header, .about {
   height: 100vh;
   position: relative;
 }
@@ -69,7 +78,8 @@ body {
   position: absolute;
   bottom: 3em;
   left: 50%;
-  margin-left: -60px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   border: 5px solid #dbdbdb;
 }
 
@@ -146,5 +156,34 @@ body {
 .banner-button:active {
   outline: none;
   border: none;
+}
+
+.about {
+  padding-top: 4em;
+}
+
+.personal-information {
+  position: relative;
+  width: 93.75%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.personal-information li {
+  margin-bottom: 0.5rem;
+  list-style-type: none;
+}
+
+.personal-information::after {
+  content: "";
+  background-color: rgba(31, 104, 159, 0.15);
+  z-index: -1;
+  width: 50%;
+  height: 130%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(11%, -10%);
+          transform: translate(11%, -10%);
 }
 /*# sourceMappingURL=main.css.map */

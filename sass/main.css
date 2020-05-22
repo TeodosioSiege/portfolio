@@ -48,18 +48,27 @@ body {
 
 .nav-list {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 66%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 3em;
+  left: 0;
+  text-align: center;
+  background: inherit;
 }
 
 .nav-list a {
   text-decoration: none;
   color: inherit;
+  line-height: 2.5;
+}
+
+.nav-list > li:firstchild a {
+  line-height: 3;
+}
+
+.nav-burger {
+  color: white;
 }
 
 .container {

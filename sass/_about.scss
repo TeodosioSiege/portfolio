@@ -7,6 +7,7 @@
   width: 93.75%;
   margin: 0 auto;
   line-height: 1.5;
+  margin-bottom: 5em;
   h2 {
     margin-bottom: 0.75em;
   }
@@ -25,5 +26,15 @@
     top: 0;
     right: 0;
     transform: translate(11%, -10%);
+  }
+}
+.educational-background {
+  @extend .personal-information;
+  text-align: right;
+
+  &::after {
+    right: none;
+    left: 0;
+    transform: translate(-11%, -10%);
   }
 }

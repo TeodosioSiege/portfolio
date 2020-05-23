@@ -176,23 +176,24 @@ body {
   padding-top: 4em;
 }
 
-.personal-information {
+.personal-information, .educational-background {
   position: relative;
   width: 93.75%;
   margin: 0 auto;
   line-height: 1.5;
+  margin-bottom: 5em;
 }
 
-.personal-information h2 {
+.personal-information h2, .educational-background h2 {
   margin-bottom: 0.75em;
 }
 
-.personal-information li {
+.personal-information li, .educational-background li {
   margin-bottom: 0.5rem;
   list-style-type: none;
 }
 
-.personal-information::after {
+.personal-information::after, .educational-background::after {
   content: "";
   background-color: rgba(31, 104, 159, 0.15);
   z-index: -1;
@@ -203,5 +204,16 @@ body {
   right: 0;
   -webkit-transform: translate(11%, -10%);
           transform: translate(11%, -10%);
+}
+
+.educational-background {
+  text-align: right;
+}
+
+.educational-background::after {
+  right: none;
+  left: 0;
+  -webkit-transform: translate(-11%, -10%);
+          transform: translate(-11%, -10%);
 }
 /*# sourceMappingURL=main.css.map */

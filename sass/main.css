@@ -51,7 +51,7 @@ body {
   display: none;
   width: 100%;
   position: absolute;
-  top: 3em;
+  top: calc(3em + 2px);
   left: 0;
   text-align: center;
   background: inherit;
@@ -82,14 +82,11 @@ body {
 }
 
 .header-image-container {
-  width: 120px;
-  height: 150px;
+  width: auto;
+  height: 200px;
   position: absolute;
-  bottom: 3em;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border: 5px solid #dbdbdb;
+  right: 0;
+  top: 50%;
 }
 
 .header-image {
@@ -119,12 +116,19 @@ body {
   font-weight: normal;
   font-size: 1.5rem;
   padding-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .banner-button {
   padding: 0.7em 1em;
   outline: none;
   border: none;
+  display: block;
+  margin-bottom: 1em;
+  width: 140px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  font-weight: bold;
 }
 
 .banner-button--main {
@@ -177,6 +181,10 @@ body {
   width: 93.75%;
   margin: 0 auto;
   line-height: 1.5;
+}
+
+.personal-information h2 {
+  margin-bottom: 0.75em;
 }
 
 .personal-information li {

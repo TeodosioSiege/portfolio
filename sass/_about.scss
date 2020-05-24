@@ -6,7 +6,7 @@
   position: relative;
   width: 93.75%;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 1.75;
   margin-bottom: 5em;
   h2 {
     margin-bottom: 0.75em;
@@ -37,4 +37,7 @@
     left: 0;
     transform: translate(-11%, -10%);
   }
+}
+.work-experience {
+  @extend .personal-information;
 }

@@ -41,3 +41,23 @@
 .work-experience {
   @extend .personal-information;
 }
+.technical-skills {
+  text-align: center;
+  h2 {
+    margin-bottom: 1em;
+  }
+}
+.image-placeholder {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: pallete(primary);
+}
+
+.skill-row {
+  display: flex;
+  justify-content: space-around;
+}
+.skill {
+  text-align: center;
+}

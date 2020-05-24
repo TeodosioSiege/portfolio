@@ -216,4 +216,31 @@ body {
   -webkit-transform: translate(-11%, -10%);
           transform: translate(-11%, -10%);
 }
+
+.technical-skills {
+  text-align: center;
+}
+
+.technical-skills h2 {
+  margin-bottom: 1em;
+}
+
+.image-placeholder {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: #1f689f;
+}
+
+.skill-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skill {
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

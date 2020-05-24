@@ -112,7 +112,7 @@ body {
       }
       &:active {
         background: lighten(pallete(primary), 53%);
-        transform: scaleY(0.98);
+        transform: scale(0.78);
       }
     }
     &--secondary {
@@ -122,7 +122,7 @@ body {
       }
       &:active {
         background: lighten(#0e4e6d, 8%);
-        transform: scaleY(0.98);
+        transform: scale(0.78);
       }
     }
     &:focus {

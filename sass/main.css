@@ -143,8 +143,8 @@ body {
 
 .banner-button--main:active {
   background: #d5e9f7;
-  -webkit-transform: scaleY(0.98);
-          transform: scaleY(0.98);
+  -webkit-transform: scale(0.78);
+          transform: scale(0.78);
 }
 
 .banner-button--secondary {
@@ -158,8 +158,8 @@ body {
 
 .banner-button--secondary:active {
   background: #136891;
-  -webkit-transform: scaleY(0.98);
-          transform: scaleY(0.98);
+  -webkit-transform: scale(0.78);
+          transform: scale(0.78);
 }
 
 .banner-button:focus {

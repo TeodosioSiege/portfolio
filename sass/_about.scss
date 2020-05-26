@@ -52,12 +52,19 @@
   width: 90px;
   border-radius: 50%;
   background: pallete(primary);
+  margin-bottom: 1em;
 }
 
 .skill-row {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 1em;
 }
 .skill {
   text-align: center;
+}
+
+.row-width-80 {
+  width: 80%;
+  margin: 0 auto;
 }

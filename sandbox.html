@@ -15,6 +15,10 @@
         box-sizing: border-box;
         font-family: "Montserrat";
       }
+      body {
+        overflow-x: hidden;
+        width: 100vw;
+      }
       nav {
         display: flex;
         justify-content: space-around;
@@ -31,44 +35,62 @@
         display: flex;
         justify-content: space-around;
         width: 60%;
+        /* start media query */
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        height: 92vh;
+        background-color: #1f689f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+      }
+      .nav-links li {
+        list-style-type: none;
+        /* start media query */
+        opacity: 0;
+      }
+      .burger {
+        cursor: pointer;
+        height: 1em;
+        /* start media query */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       a {
         color: #f7fbff;
         text-decoration: none;
       }
-      .nav-links li {
-        list-style-type: none;
-      }
-      .burger {
-        display: none;
-      }
       .burger-line {
-        width: 1em;
-        height: 3px;
+        width: 1.5em;
+        height: 2px;
         background-color: white;
-        margin: 3px;
         position: relative;
       }
 
       .burger-line::before {
         content: "";
         position: absolute;
-        top: -12px;
-        left: -3px;
-        width: 1em;
-        height: 3px;
+        top: -7px;
+        width: 1.5em;
+        height: 2px;
         background-color: white;
-        margin: 3px;
+        cursor: pointer;
       }
       .burger-line::after {
         content: "";
         position: absolute;
-        bottom: -12px;
-        left: -3px;
-        width: 1em;
-        height: 3px;
+        bottom: -7px;
+        width: 1.5em;
+        height: 2px;
         background-color: white;
-        margin: 3px;
+        cursor: pointer;
+      }
+      .nav-active {
+        transform: translateX(0);
       }
       @media screen and (min-width: 480px) {
         .nav-links {
@@ -84,6 +106,7 @@
       @media screen and (min-width: 1024px) {
         .nav-links {
           width: 30%;
+          position: relative;
         }
       }
     </style>
@@ -103,5 +126,13 @@
         <div class="burger-line"></div>
       </div>
     </nav>
+    <script>
+      const burger = document.querySelector(".burger");
+      const navLinks = document.querySelector(".nav-links");
+      burger.addEventListener("click", toggleClass);
+      function toggleClass() {
+        navLinks.classList.toggle("nav-active");
+      }
+    </script>
   </body>
 </html>

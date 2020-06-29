@@ -92,6 +92,21 @@
         transform: translateX(0);
       }
 
+      .toggle {
+        height: 0;
+        transition: all 100ms ease-in;
+      }
+      .toggle:before {
+        transform: rotate(45deg);
+        top: -1px;
+        transition: all 300ms ease-in;
+      }
+      .toggle:after {
+        transform: rotate(-45deg);
+        bottom: -1px;
+        transition: all 300ms ease-in;
+      }
+
       @keyframes navLinkFade {
         from {
           opacity: 0;
@@ -116,7 +131,8 @@
       @media screen and (min-width: 1024px) {
         .nav-links {
           width: 30%;
-          position: relative;
+          position: static;
+          height: auto;
         }
       }
     </style>
@@ -138,10 +154,12 @@
     </nav>
     <script>
       const burger = document.querySelector(".burger");
+      const burgerLine = document.querySelector(".burger-line");
       const nav = document.querySelector(".nav-links");
       const navLinks = document.querySelectorAll(".nav-links li");
       burger.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
+        burgerLine.classList.toggle("toggle");
         navLinks.forEach((link, index) => {
           if (link.style.animation) {
             link.style.animation = "";

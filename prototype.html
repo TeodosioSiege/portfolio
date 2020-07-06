@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="./sass/main.css" />
     <title>Siege Teodosio</title>
   </head>
@@ -19,9 +19,9 @@
         <li class="nav-list-item"><a href="#">Portfolio</a></li>
         <li class="nav-list-item"><a href="#">Contact</a></li>
       </ul>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars nav-burger">s</i>
-      </a>
+      <div class="burger">
+        <div class="burger-line"></div>
+      </div>
     </nav>
     <div class="container">
       <header class="header" id="header">
@@ -142,14 +142,24 @@
       <section class="portfolio" id="portfolio"></section>
     </div>
     <script>
-      function myFunction() {
-        var x = document.querySelector(".nav-list");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
+      const burger = document.querySelector(".burger");
+      const burgerLine = document.querySelector(".burger-line");
+      const nav = document.querySelector(".nav-list");
+      const toggler = document.querySelector(".toggle");
+      const navLinks = document.querySelectorAll(".nav-list-item");
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        burgerLine.classList.toggle("toggle");
+        navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+            link.style.animation = "";
+          } else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`;
+          }
+        });
+      });
     </script>
   </body>
 </html>

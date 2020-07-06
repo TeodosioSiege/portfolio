@@ -107,3 +107,25 @@
     transform: translateX(0px);
   }
 }
+
+@media screen and (min-width: 480px) {
+  .nav-list {
+    width: 60%;
+    position: static;
+    height: auto;
+    flex-direction: row;
+    transform: translate(0);
+  }
+  .nav-list-item {
+    opacity: 1;
+  }
+  .burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .nav-list {
+    width: 50%;
+  }
+}

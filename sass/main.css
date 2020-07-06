@@ -205,6 +205,32 @@ body {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .nav-list {
+    width: 60%;
+    position: static;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .nav-list-item {
+    opacity: 1;
+  }
+  .burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .nav-list {
+    width: 50%;
+  }
+}
+
 .header, .about {
   height: 100vh;
   position: relative;

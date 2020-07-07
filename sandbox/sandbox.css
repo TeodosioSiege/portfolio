@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=sandbox.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel-container {
+  width: 60%;
+  margin: auto;
+  border: 5px solid black;
+}
+
+.carousel-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.carousel-tile {
+  width: 100%;
+}
+/*# sourceMappingURL=sandbox.css.map */

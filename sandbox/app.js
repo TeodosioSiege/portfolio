@@ -5,7 +5,8 @@ const nextBtn = document.querySelector(".next-btn");
 
 //translate image from showing last image clone to the actual first image
 let counter = 1; //pertains to first image
-const size = carouselImages[0].clientWidth;
+// const size = carouselImages[1].clientWidth;
+const size = 310; //need to hard code since clientWidth inexplicably returns 39?
 
 carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 

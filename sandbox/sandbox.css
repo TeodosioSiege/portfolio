@@ -9,7 +9,7 @@
   width: 100%;
   margin: auto;
   overflow: hidden;
-  border: 5px solid black;
+  position: relative;
 }
 
 .carousel-slide {
@@ -21,5 +21,31 @@
 
 .carousel-tile {
   width: 100%;
+}
+
+.btn {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.btn-prev {
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.479)), to(rgba(0, 0, 0, 0.055)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.055));
+}
+
+.btn-next {
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.479)), to(rgba(0, 0, 0, 0.055)));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.055));
+}
+
+.btn:focus {
+  outline: none;
 }
 /*# sourceMappingURL=sandbox.css.map */

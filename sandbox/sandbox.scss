@@ -7,7 +7,8 @@
   width: 100%;
   margin: auto;
   overflow: hidden;
-  border: 5px solid black;
+  // border: 5px solid black;
+  position: relative;
 }
 .carousel-slide {
   display: flex;
@@ -15,4 +16,35 @@
 }
 .carousel-tile {
   width: 100%;
+}
+
+.btn {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  background-color: black;
+  color: white;
+  border: none;
+  // opacity: 0.3;
+
+  &-prev {
+    left: 0;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.479),
+      rgba(0, 0, 0, 0.055)
+    );
+  }
+  &-next {
+    right: 0;
+    background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.479),
+      rgba(0, 0, 0, 0.055)
+    );
+  }
+  &:focus {
+    outline: none;
+  }
 }

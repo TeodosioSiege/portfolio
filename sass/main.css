@@ -329,6 +329,7 @@ body {
 
 .about {
   padding-top: 4em;
+  height: auto;
 }
 
 .personal-information, .educational-background, .work-experience {

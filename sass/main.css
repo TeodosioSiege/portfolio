@@ -330,6 +330,7 @@ body {
 .about {
   padding-top: 4em;
   height: auto;
+  padding-bottom: 2em;
 }
 
 .personal-information, .educational-background, .work-experience {
@@ -405,5 +406,61 @@ body {
 .row-width-80 {
   width: 80%;
   margin: 0 auto;
+}
+
+.portfolio {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #1f689f;
+  color: white;
+}
+
+.portfolio h2 {
+  margin-bottom: 0.75em;
+  text-align: center;
+}
+
+.carousel-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.carousel-tile {
+  width: 100%;
+}
+
+.btn {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.btn-prev {
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(31, 103, 158, 0.514)), to(rgba(31, 103, 158, 0)));
+  background: linear-gradient(to right, rgba(31, 103, 158, 0.514), rgba(31, 103, 158, 0));
+}
+
+.btn-next {
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(31, 103, 158, 0.514)), to(rgba(31, 103, 158, 0)));
+  background: linear-gradient(to left, rgba(31, 103, 158, 0.514), rgba(31, 103, 158, 0));
+}
+
+.btn:focus {
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */

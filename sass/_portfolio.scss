@@ -1,0 +1,57 @@
+//portfolio style
+
+.portfolio {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  @include set-bg(#1f689f);
+  h2 {
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+}
+
+//carousel code
+.carousel-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  // border: 5px solid black;
+  position: relative;
+}
+.carousel-slide {
+  display: flex;
+  width: 100%;
+}
+.carousel-tile {
+  width: 100%;
+}
+
+.btn {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  background-color: black;
+  color: white;
+  border: none;
+
+  &-prev {
+    left: 0;
+    background: linear-gradient(
+      to right,
+      hsla(206, 67%, 37%, 0.514),
+      hsla(206, 67%, 37%, 0)
+    );
+  }
+  &-next {
+    right: 0;
+    background: linear-gradient(
+      to left,
+      hsla(206, 67%, 37%, 0.514),
+      hsla(206, 67%, 37%, 0)
+    );
+  }
+  &:focus {
+    outline: none;
+  }
+}

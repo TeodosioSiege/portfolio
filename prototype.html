@@ -141,7 +141,57 @@
       </section>
       <section class="portfolio" id="portfolio">
         <h2>Portfolio</h2>
+        <div class="carousel-container">
+          <button class="btn btn-prev">&langle;</button>
+          <button class="btn btn-next">&rangle;</button>
+          <div class="carousel-slide">
+            <img
+              src="../assets/capstone3.JPG"
+              alt="Finessa Career Page"
+              class="carousel-tile"
+              id="last-clone"
+            />
+            <img
+              src="../assets/tributePage.JPG"
+              alt="tribute page"
+              class="carousel-tile"
+            />
+            <img
+              src="../assets/surveyForm.JPG"
+              alt="survey form"
+              class="carousel-tile"
+            />
+            <img
+              src="../assets/landingPage.JPG"
+              alt="landing page"
+              class="carousel-tile"
+            />
+            <img
+              src="../assets/capstone1.JPG"
+              alt="Cube Seeker Rubik's Cube Store"
+              class="carousel-tile"
+            />
+            <img
+              src="../assets/capstone2.JPG"
+              alt="Musicore Online Music Store"
+              class="carousel-tile"
+            />
+            <img
+              src="../assets/capstone3.JPG"
+              alt="Finessa Career Page"
+              class="carousel-tile"
+            />
+            <img
+              src="../assets/tributePage.JPG"
+              alt="tribute page"
+              class="carousel-tile"
+              id="first-clone"
+            />
+          </div>
       </section>
+    </div>
+
+    
     </div>
     <script>
       const burger = document.querySelector(".burger");
@@ -161,6 +211,48 @@
             }s`;
           }
         });
+      });
+
+      //carousel code
+
+      const carouselSlide = document.querySelector(".carousel-slide");
+      const carouselImages = document.querySelectorAll(".carousel-tile");
+      const prevBtn = document.querySelector(".btn-prev");
+      const nextBtn = document.querySelector(".btn-next");
+
+      //translate image from showing last image clone to the actual first image
+      let counter = 1; //pertains to first image
+      const size = carouselSlide.offsetWidth;
+
+      (() => console.log(size))();
+      carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+
+      //event listeners
+      nextBtn.addEventListener("click", () => {
+        if (counter >= carouselImages.length - 1) return;
+        carouselSlide.style.transition = "transform 0.4s ease-in-out";
+        counter++;
+        carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+      });
+      prevBtn.addEventListener("click", () => {
+        if (counter <= 0) return;
+        carouselSlide.style.transition = "transform 0.4s ease-in-out";
+        counter--;
+        carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+      });
+
+      carouselSlide.addEventListener("transitionend", () => {
+        if (carouselImages[counter].id == "last-clone") {
+          carouselSlide.style.transition = "none";
+          counter = carouselImages.length - 2;
+          carouselSlide.style.transform =
+            "translateX(" + -size * counter + "px)";
+        } else if (carouselImages[counter].id == "first-clone") {
+          carouselSlide.style.transition = "none";
+          counter = 1;
+          carouselSlide.style.transform =
+            "translateX(" + -size * counter + "px)";
+        }
       });
     </script>
   </body>

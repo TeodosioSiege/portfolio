@@ -20,7 +20,9 @@
 }
 .carousel-slide {
   display: flex;
+  align-items: center;
   width: 100%;
+  min-height: 33vh;
 }
 .carousel-tile {
   width: 100%;

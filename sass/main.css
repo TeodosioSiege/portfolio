@@ -281,6 +281,11 @@ body {
   margin-right: 0;
 }
 
+.banner-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .banner-button--main {
   background: white;
   color: #1f689f;

@@ -37,7 +37,7 @@ body {
   background: #1f689f;
   color: white;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,5 +466,29 @@ body {
 
 .btn:focus {
   outline: none;
+}
+
+.footer {
+  background: #195d91;
+  color: white;
+  padding: 2em 0;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.social button {
+  width: 30%;
 }
 /*# sourceMappingURL=main.css.map */

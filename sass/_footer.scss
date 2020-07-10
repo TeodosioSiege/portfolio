@@ -1,0 +1,15 @@
+.footer {
+  @include set-bg(pallete(dark));
+  padding: 2em 0;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  button {
+    width: 30%;
+  }
+}

@@ -16,8 +16,8 @@
       <ul class="nav-list">
         <li class="nav-list-item"><a href="#header">Home</a></li>
         <li class="nav-list-item"><a href="#about">About</a></li>
-        <li class="nav-list-item"><a href="#">Portfolio</a></li>
-        <li class="nav-list-item"><a href="#">Contact</a></li>
+        <li class="nav-list-item"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav-list-item"><a href="#contact">Contact</a></li>
       </ul>
       <div class="burger">
         <div class="burger-line"></div>
@@ -72,19 +72,20 @@
                 >Zuitt Coding Bootcamp <br /><em>[formerly Tuitt]</em> </strong
               >(2018)<br />Full Stack Web Development
             </li>
-            <li></li>
           </ul>
         </article>
         <article class="work-experience">
           <h2>Work Experience</h2>
           <ul>
-            <strong>Accenture, Inc.</strong
-            ><em
-              >Global One, E-Commerce Road, <br />
-              Eastwood City, Libis, Quezon City</em
-            ><br />
-            (2011-2019)<br />
-            Transaction Processing Representative
+            <li>
+              <strong>Accenture, Inc.</strong
+              ><em
+                >Global One, E-Commerce Road, <br />
+                Eastwood City, Libis, Quezon City</em
+              ><br />
+              (2011-2019)<br />
+              Transaction Processing Representative
+            </li>
           </ul>
         </article>
         <article class="technical-skills">
@@ -188,23 +189,28 @@
               id="first-clone"
             />
           </div>
+        </div>
       </section>
-      <footer>
+      <footer class="footer" id="contact">
         <h2>Contact Me!</h2>
+        <br />
         <ul>
           <li>0936-9646432</li>
-          <li>siegeteodosio15@gmail.com</li> 
-          </ul>
-          <div class="social">
-            <button>Facebook</button>
-            <button>Github</button>
-            <button>LinkedIn</button>
-          </div>
+          <li>siegeteodosio15@gmail.com</li>
+        </ul>
+        <br />
+        <div class="social">
+          <button class="banner-button banner-button--secondary">
+            Facebook
+          </button>
+          <button class="banner-button banner-button--secondary">Github</button>
+          <button class="banner-button banner-button--secondary">
+            LinkedIn
+          </button>
+        </div>
       </footer>
     </div>
 
-    
-    </div>
     <script>
       const burger = document.querySelector(".burger");
       const burgerLine = document.querySelector(".burger-line");

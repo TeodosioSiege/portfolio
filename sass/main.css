@@ -232,7 +232,7 @@ body {
 }
 
 .header, .about {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -340,10 +340,10 @@ body {
 
 .personal-information, .educational-background, .work-experience {
   position: relative;
-  width: 93.75%;
+  padding: 3em 0;
+  width: 90%;
   margin: 0 auto;
   line-height: 1.75;
-  margin-bottom: 5.33em;
 }
 
 .personal-information h2, .educational-background h2, .work-experience h2 {
@@ -360,12 +360,12 @@ body {
   background-color: rgba(31, 104, 159, 0.15);
   z-index: -1;
   width: 50%;
-  height: 130%;
+  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: translate(11%, -10%);
-          transform: translate(11%, -10%);
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
 }
 
 .educational-background {

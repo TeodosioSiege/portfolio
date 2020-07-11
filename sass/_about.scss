@@ -10,7 +10,6 @@
   width: 90%;
   margin: 0 auto;
   line-height: 1.75;
-  // margin-bottom: 5.33em;
   h2 {
     margin-bottom: 0.75em;
   }
@@ -38,7 +37,7 @@
   &::after {
     right: none;
     left: 0;
-    transform: translate(-11%, -10%);
+    transform: translateX(-10%);
   }
 }
 .work-experience {

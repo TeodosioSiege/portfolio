@@ -375,8 +375,8 @@ body {
 .educational-background::after {
   right: none;
   left: 0;
-  -webkit-transform: translate(-11%, -10%);
-          transform: translate(-11%, -10%);
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
 }
 
 .technical-skills {

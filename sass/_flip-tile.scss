@@ -32,6 +32,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  small {
+    display: block;
+    line-height: 2rem;
+  }
 }
 .flip-card-front-1 {
   background: url("../assets/tributePage.JPG") center/cover no-repeat;
@@ -55,10 +59,14 @@
   transform: rotateY(180deg);
   @include set-bg(white);
   color: var(--bg-color);
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.card-title {
+  font-size: 1.5em;
 }
 .card-text {
   line-height: 2;

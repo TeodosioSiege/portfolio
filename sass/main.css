@@ -521,6 +521,12 @@ body {
   height: 100%;
 }
 
+.flip-card-front small,
+.flip-card-back small {
+  display: block;
+  line-height: 2rem;
+}
+
 .flip-card-front-1 {
   background: url("../assets/tributePage.JPG") center/cover no-repeat;
 }
@@ -551,6 +557,7 @@ body {
   background: white;
   color: #1f689f;
   color: var(--bg-color);
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,6 +571,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.card-title {
+  font-size: 1.5em;
 }
 
 .card-text {

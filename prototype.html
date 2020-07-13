@@ -30,14 +30,21 @@
           <h1 class="banner-heading">
             Let me help you build wonderful websites
           </h1>
-          <button class="banner-button banner-button--main">
-            <a href="#portfolio"> Go to Projects</a>
+          <button
+            class="banner-button banner-button--main"
+            onclick="window.location.href='#portfolio';"
+          >
+            Go to Projects
           </button>
-          <button class="banner-button banner-button--secondary">
-            <a href="./assets/Teodosio,Christoper.pdf" target="_blank">
+          <a
+            href="./assets/Teodosio,Christoper.pdf"
+            target="_blank"
+            class="banner-link"
+          >
+            <button class="banner-button banner-button--secondary">
               Download Resume
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
         <div class="header-image-container">
           <img
@@ -290,13 +297,31 @@
         </ul>
         <br />
         <div class="social">
-          <button class="banner-button banner-button--secondary">
-            Facebook
-          </button>
-          <button class="banner-button banner-button--secondary">Github</button>
-          <button class="banner-button banner-button--secondary">
-            LinkedIn
-          </button>
+          <a
+            href="https://web.facebook.com/siegesleight"
+            target="_blank"
+            class="banner-link"
+          >
+            <button class="footer-button footer-button--secondary">
+              Facebook
+            </button></a
+          ><a
+            href="https://github.com/TeodosioSiege"
+            target="_blank"
+            class="banner-link"
+          >
+            <button class="footer-button footer-button--secondary">
+              Github
+            </button></a
+          ><a
+            href="https://www.linkedin.com/in/teodosiosiege"
+            target="_blank"
+            class="banner-link"
+          >
+            <button class="footer-button footer-button--secondary">
+              LinkedIn
+            </button></a
+          >
         </div>
       </footer>
     </div>
@@ -349,7 +374,6 @@
       });
 
       carouselSlide.addEventListener("transitionend", () => {
-        console.log(carouselImages[counter]);
         if (carouselImages[counter].id == "last-clone") {
           carouselSlide.style.transition = "none";
           counter = carouselImages.length - 2;

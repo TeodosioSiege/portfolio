@@ -259,6 +259,10 @@ body {
   line-height: 1.5;
 }
 
+.banner-link {
+  text-decoration: none;
+}
+
 .banner-subheading {
   color: #dfdbdb;
   padding-top: 2em;
@@ -274,7 +278,7 @@ body {
   margin-bottom: 1em;
 }
 
-.banner-button {
+.banner-button, .footer-button {
   padding: 0.7em 1em;
   outline: none;
   border: none;
@@ -284,11 +288,6 @@ body {
   font-size: 0.79em;
   font-weight: bold;
   margin-right: 0;
-}
-
-.banner-button a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .banner-button--main {
@@ -307,27 +306,27 @@ body {
           transform: scale(0.98);
 }
 
-.banner-button--secondary {
+.banner-button--secondary, .footer-button--secondary {
   background: #0e4e6d;
   color: white;
 }
 
-.banner-button--secondary:hover {
+.banner-button--secondary:hover, .footer-button--secondary:hover {
   background: #146e9a;
 }
 
-.banner-button--secondary:active {
+.banner-button--secondary:active, .footer-button--secondary:active {
   background: #136891;
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }
 
-.banner-button:focus {
+.banner-button:focus, .footer-button:focus {
   outline: none;
   border: none;
 }
 
-.banner-button:active {
+.banner-button:active, .footer-button:active {
   outline: none;
   border: none;
 }
@@ -601,7 +600,11 @@ body {
   margin: 0 auto;
 }
 
-.social button {
+.social > * {
   width: 30%;
+}
+
+.footer-button {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

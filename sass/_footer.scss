@@ -9,7 +9,15 @@
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  button {
+  & > * {
     width: 30%;
+  }
+}
+
+.footer-button {
+  @extend .banner-button;
+  width: 100%;
+  &--secondary {
+    @extend .banner-button--secondary;
   }
 }

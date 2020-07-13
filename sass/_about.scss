@@ -50,14 +50,23 @@
     margin-bottom: 1em;
   }
 }
-.image-placeholder {
+.image-holder {
   height: 90px;
   width: 90px;
   border-radius: 50%;
-  background: pallete(primary);
+  @include set-bg(pallete(primary));
   margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.image-icon {
+  font-size: 4em;
+}
+.image-png {
+  filter: grayscale(100%) brightness(300%);
+  height: 4em;
+}
 .skill-row {
   display: flex;
   justify-content: space-around;

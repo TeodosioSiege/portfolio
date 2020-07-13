@@ -1,0 +1,65 @@
+// .project-tile {
+//   width: 100%;
+//   text-align: center;
+// }
+
+.flip-card {
+  flex-basis: auto;
+  min-width: 100%;
+  height: 33vh;
+  a {
+    @include set-bg(white);
+  }
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card-inner,
+.flip-card-front,
+.flip-card-back {
+  border-radius: 2px;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.flip-card-front-1 {
+  background: url("../assets/tributePage.JPG") center/cover no-repeat;
+}
+.flip-card-front-2 {
+  background: url("../assets/surveyForm.JPG") center/cover no-repeat;
+}
+.flip-card-front-3 {
+  background: url("../assets/landingPage.JPG") center/cover no-repeat;
+}
+.flip-card-front-4 {
+  background: url("../assets/capstone1.JPG") center/cover no-repeat;
+}
+.flip-card-front-5 {
+  background: url("../assets/capstone2.JPG") center/cover no-repeat;
+}
+.flip-card-front-6 {
+  background: url("../assets/capstone3.JPG") center/cover no-repeat;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+  @include set-bg(white);
+  color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-text {
+  line-height: 2;
+}

@@ -92,3 +92,33 @@
   width: 80%;
   margin: 0 auto;
 }
+
+@media screen AND (min-width: 1024px) {
+  .personal-information {
+    font-size: calc(1.5em * 0.95);
+    line-height: 1.5;
+    width: 80%;
+    &:after {
+      height: 90%;
+      width: 80%;
+      top: 50%;
+      transform: translate(15%, -50%);
+    }
+  }
+  .educational-background {
+    &:after {
+      left: 0;
+      transform: translate(-15%, -50%);
+    }
+  }
+
+  .technical-skills h2 {
+    font-size: 3em;
+  }
+  .image-icon {
+    font-size: 4rem;
+  }
+  .skill {
+    transform: scale(1.5);
+  }
+}

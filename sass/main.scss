@@ -105,14 +105,14 @@ body {
 
 @media screen AND (min-width: 1024px) {
   .banner {
-    padding: 4em 5rem 0;
+    padding: 4em 10rem 0;
     background-position: 0 75%;
     &-subheading {
-      font-size: 2em;
+      font-size: calc(0.95 * 2em);
     }
     &-heading {
       padding-top: 0;
-      font-size: 4em;
+      font-size: calc(0.95 * 4em);
       width: 60%;
       margin-bottom: 0;
       line-height: 1.25;
@@ -128,7 +128,7 @@ body {
   }
 
   .header-image-container {
-    right: 5em;
+    right: 10em;
     top: 20%;
     height: 450px;
   }

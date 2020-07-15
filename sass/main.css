@@ -233,7 +233,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .nav {
-    padding: 0.5rem 5rem;
+    padding: 0.5rem 10rem;
     height: 4rem;
     font-size: 1.25em;
   }
@@ -347,15 +347,15 @@ body {
 
 @media screen and (min-width: 1024px) {
   .banner {
-    padding: 4em 5rem 0;
+    padding: 4em 10rem 0;
     background-position: 0 75%;
   }
   .banner-subheading {
-    font-size: 2em;
+    font-size: calc(0.95 * 2em);
   }
   .banner-heading {
     padding-top: 0;
-    font-size: 4em;
+    font-size: calc(0.95 * 4em);
     width: 60%;
     margin-bottom: 0;
     line-height: 1.25;
@@ -369,7 +369,7 @@ body {
     margin-right: 17em;
   }
   .header-image-container {
-    right: 5em;
+    right: 10em;
     top: 20%;
     height: 450px;
   }
@@ -495,6 +495,36 @@ body {
 .row-width-80 {
   width: 80%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .personal-information, .educational-background, .work-experience {
+    font-size: calc(1.5em * 0.95);
+    line-height: 1.5;
+    width: 80%;
+  }
+  .personal-information:after, .educational-background:after, .work-experience:after {
+    height: 90%;
+    width: 80%;
+    top: 50%;
+    -webkit-transform: translate(15%, -50%);
+            transform: translate(15%, -50%);
+  }
+  .educational-background:after {
+    left: 0;
+    -webkit-transform: translate(-15%, -50%);
+            transform: translate(-15%, -50%);
+  }
+  .technical-skills h2 {
+    font-size: 3em;
+  }
+  .image-icon {
+    font-size: 4rem;
+  }
+  .skill {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
 
 .portfolio {

@@ -231,6 +231,20 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .nav {
+    padding: 0.5rem 5rem;
+    height: 4rem;
+    font-size: 1.25em;
+  }
+  .nav-brand {
+    font-size: 1.25em;
+  }
+  .nav-list {
+    width: 33%;
+  }
+}
+
 .header, .about {
   min-height: 100vh;
   position: relative;
@@ -329,6 +343,40 @@ body {
 .banner-button:active, .footer-button:active {
   outline: none;
   border: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    padding: 4em 5rem 0;
+    background-position: 0 75%;
+  }
+  .banner-subheading {
+    font-size: 2em;
+  }
+  .banner-heading {
+    padding-top: 0;
+    font-size: 4em;
+    width: 60%;
+    margin-bottom: 0;
+    line-height: 1.25;
+  }
+  .banner-button, .footer-button {
+    display: inline-block;
+    width: 200px;
+    padding: 1.25em 1em;
+  }
+  .banner-button--main {
+    margin-right: 17em;
+  }
+  .header-image-container {
+    right: 5em;
+    top: 20%;
+    height: 450px;
+  }
+  .banner-button, .footer-button {
+    display: inline-block;
+    width: 200px;
+  }
 }
 
 .about {

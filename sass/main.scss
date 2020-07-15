@@ -102,6 +102,43 @@ body {
     }
   }
 }
+
+@media screen AND (min-width: 1024px) {
+  .banner {
+    padding: 4em 5rem 0;
+    background-position: 0 75%;
+    &-subheading {
+      font-size: 2em;
+    }
+    &-heading {
+      padding-top: 0;
+      font-size: 4em;
+      width: 60%;
+      margin-bottom: 0;
+      line-height: 1.25;
+    }
+    &-button {
+      display: inline-block;
+      width: 200px;
+      padding: 1.25em 1em;
+      &--main {
+        margin-right: 17em;
+      }
+    }
+  }
+
+  .header-image-container {
+    right: 5em;
+    top: 20%;
+    height: 450px;
+  }
+
+  .banner-button {
+    display: inline-block;
+    width: 200px;
+  }
+}
+
 @import "about";
 @import "portfolio";
 @import "flip-tile";

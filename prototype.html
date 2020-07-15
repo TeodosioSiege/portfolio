@@ -421,6 +421,7 @@
 
       //carousel code
 
+      const carouselContainer = document.querySelector(".carousel-container");
       const carouselSlide = document.querySelector(".carousel-slide");
       const carouselImages = document.querySelectorAll(".carousel-tile");
       const prevBtn = document.querySelector(".btn-prev");
@@ -432,19 +433,23 @@
 
       carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
-      //event listeners
-      nextBtn.addEventListener("click", () => {
+      const nextSlide = () => {
         if (counter >= carouselImages.length - 1) return;
         carouselSlide.style.transition = "transform 0.4s ease-in-out";
         counter++;
         carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
-      });
-      prevBtn.addEventListener("click", () => {
+      };
+
+      const prevSlide = () => {
         if (counter <= 0) return;
         carouselSlide.style.transition = "transform 0.4s ease-in-out";
         counter--;
         carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
-      });
+      };
+
+      //event listeners
+      nextBtn.addEventListener("click", nextSlide);
+      prevBtn.addEventListener("click", prevSlide);
 
       carouselSlide.addEventListener("transitionend", () => {
         if (carouselImages[counter].id == "last-clone") {
@@ -459,6 +464,36 @@
             "translateX(" + -size * counter + "px)";
         }
       });
+
+      //swipe event
+
+      carouselContainer.addEventListener("touchstart", handleTouchStart, false);
+      // carouselSlide.addEventListener("mousedown", handleTouchStart, false);
+      carouselContainer.addEventListener("touchmove", handleTouchMove, false);
+      let xDown = null;
+      function getTouches(evt) {
+        return evt.touches;
+      }
+      function handleTouchStart(evt) {
+        const firstTouch = getTouches(evt)[0];
+        xDown = firstTouch.clientX;
+      }
+      function handleTouchMove(evt) {
+        if (!xDown) {
+          return;
+        }
+        let xUp = evt.touches[0].clientX;
+        xDiff = xDown - xUp;
+        if (xDiff > 0) {
+          // "left swipe"
+          nextSlide();
+        } else {
+          //right swipe
+          prevSlide();
+        }
+        // reset values
+        xDown = null;
+      }
     </script>
   </body>
 </html>

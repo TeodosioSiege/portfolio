@@ -7,6 +7,7 @@
   }
   ul {
     list-style-type: none;
+    line-height: 1.5;
   }
 }
 
@@ -30,7 +31,30 @@
 }
 
 @media screen AND (min-width: 1024px) {
-  .footer {
-    padding-left: 5em;
+  .footer-container {
+    display: grid;
+    grid-template-areas:
+      "heading heading  heading social"
+      "contact-list contact-list contact-list social";
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    h2 {
+      grid-area: heading;
+      font-size: 2em;
+    }
+    ul {
+      grid-area: contact-list;
+      font-size: 1.25em;
+    }
+  }
+
+  .social {
+    width: 100%;
+    flex-direction: column;
+    grid-area: social;
+    > * {
+      width: 100%;
+    }
   }
 }

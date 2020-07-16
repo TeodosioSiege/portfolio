@@ -347,39 +347,41 @@
         </div>
       </section>
       <footer class="footer" id="contact">
-        <h2>Contact Me!</h2>
-        <br />
-        <ul>
-          <li>0936-9646432</li>
-          <li>siegeteodosio15@gmail.com</li>
-        </ul>
-        <br />
-        <div class="social">
-          <a
-            href="https://web.facebook.com/siegesleight"
-            target="_blank"
-            class="banner-link"
-          >
-            <button class="footer-button footer-button--secondary">
-              Facebook
-            </button></a
-          ><a
-            href="https://github.com/TeodosioSiege"
-            target="_blank"
-            class="banner-link"
-          >
-            <button class="footer-button footer-button--secondary">
-              Github
-            </button></a
-          ><a
-            href="https://www.linkedin.com/in/teodosiosiege"
-            target="_blank"
-            class="banner-link"
-          >
-            <button class="footer-button footer-button--secondary">
-              LinkedIn
-            </button></a
-          >
+        <div class="footer-container">
+          <h2>Contact Me!</h2>
+          <br />
+          <ul>
+            <li>0936-9646432</li>
+            <li>siegeteodosio15@gmail.com</li>
+          </ul>
+          <br />
+          <div class="social">
+            <a
+              href="https://web.facebook.com/siegesleight"
+              target="_blank"
+              class="banner-link"
+            >
+              <button class="footer-button footer-button--secondary">
+                Facebook
+              </button></a
+            ><a
+              href="https://github.com/TeodosioSiege"
+              target="_blank"
+              class="banner-link"
+            >
+              <button class="footer-button footer-button--secondary">
+                Github
+              </button></a
+            ><a
+              href="https://www.linkedin.com/in/teodosiosiege"
+              target="_blank"
+              class="banner-link"
+            >
+              <button class="footer-button footer-button--secondary">
+                LinkedIn
+              </button></a
+            >
+          </div>
         </div>
       </footer>
     </div>
@@ -430,7 +432,6 @@
       //translate image from showing last image clone to the actual first image
       let counter = 1; //pertains to first image
       const size = carouselSlide.offsetWidth;
-      console.log(size);
       if (size <= 1024) {
         carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
       }

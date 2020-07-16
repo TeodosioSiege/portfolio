@@ -430,8 +430,8 @@
       //translate image from showing last image clone to the actual first image
       let counter = 1; //pertains to first image
       const size = carouselSlide.offsetWidth;
-
-      if (size < 1024) {
+      console.log(size);
+      if (size <= 1024) {
         carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
       }
 

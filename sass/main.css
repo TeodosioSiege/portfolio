@@ -597,7 +597,7 @@ body {
   }
   .carousel-container {
     overflow: visible;
-    width: 90%;
+    width: 80%;
   }
   .btn-prev,
   .btn-next {
@@ -755,5 +755,11 @@ body {
 
 .footer-button {
   width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding-left: 5em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

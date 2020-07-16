@@ -28,3 +28,9 @@
     @extend .banner-button--secondary;
   }
 }
+
+@media screen AND (min-width: 1024px) {
+  .footer {
+    padding-left: 5em;
+  }
+}

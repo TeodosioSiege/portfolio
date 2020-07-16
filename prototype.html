@@ -431,7 +431,9 @@
       let counter = 1; //pertains to first image
       const size = carouselSlide.offsetWidth;
 
-      carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+      if (size < 1024) {
+        carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+      }
 
       const nextSlide = () => {
         if (counter >= carouselImages.length - 1) return;

@@ -58,3 +58,28 @@
     outline: none;
   }
 }
+
+@media screen AND (min-width: 1024px) {
+  #portfolio h2 {
+    font-size: 4em;
+  }
+
+  .carousel-container {
+    overflow: visible;
+    width: 90%;
+  }
+  .btn-prev,
+  .btn-next {
+    display: none;
+  }
+
+  .carousel-slide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+  #last-clone,
+  #first-clone {
+    display: none;
+  }
+}

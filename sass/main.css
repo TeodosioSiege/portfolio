@@ -517,6 +517,7 @@ body {
   }
   .technical-skills h2 {
     font-size: 3em;
+    margin-bottom: 2em;
   }
   .image-icon {
     font-size: 4rem;
@@ -588,6 +589,31 @@ body {
 
 .btn:focus {
   outline: none;
+}
+
+@media screen and (min-width: 1024px) {
+  #portfolio h2 {
+    font-size: 4em;
+  }
+  .carousel-container {
+    overflow: visible;
+    width: 90%;
+  }
+  .btn-prev,
+  .btn-next {
+    display: none;
+  }
+  .carousel-slide {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+  #last-clone,
+  #first-clone {
+    display: none;
+  }
 }
 
 .flip-card {

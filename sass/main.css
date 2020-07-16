@@ -351,13 +351,13 @@ body {
     background-position: 0 75%;
   }
   .banner-subheading {
-    font-size: calc(0.95 * 2em);
+    font-size: calc(0.95 * 1.5em);
   }
   .banner-heading {
     padding-top: 0;
-    font-size: calc(0.95 * 4em);
+    font-size: calc(0.95 * 3em);
     width: 60%;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
     line-height: 1.25;
   }
   .banner-button, .footer-button {
@@ -366,10 +366,10 @@ body {
     padding: 1.25em 1em;
   }
   .banner-button--main {
-    margin-right: 17em;
+    margin-right: 6rem;
   }
   .header-image-container {
-    right: 10em;
+    right: 11.5em;
     top: 20%;
     height: 450px;
   }

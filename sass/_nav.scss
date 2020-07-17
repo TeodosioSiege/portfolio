@@ -136,14 +136,14 @@
 
 @media screen AND (min-width: 1024px) {
   .nav {
-    padding: 0.5rem 10rem;
+    padding: 0.5rem 4rem 0.5rem;
     height: 4rem;
     font-size: 1.25em;
     &-brand {
       font-size: 1.25em;
     }
     &-list {
-      width: 33%;
+      width: 60%;
     }
   }
 }

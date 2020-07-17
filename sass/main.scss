@@ -148,52 +148,76 @@ body {
 
 @media screen AND (min-width: 650px) AND (orientation: landscape) {
   .header-image-container {
-    height: 300px;
+    height: 50vw;
   }
 }
 
 @media screen AND (min-width: 700px) {
   .header {
     min-height: 768px;
+    height: (100vw * 1.25);
   }
   .banner {
-    height: 100vw;
+    height: 75%;
+  }
+}
+@media screen AND (min-width: 850px) {
+  .banner-info {
+    height: 50%;
+  }
+}
+
+@media screen AND (min-width: 900px) {
+  .header {
+    min-height: 0;
+    height: 100vh;
+  }
+  .banner {
+    min-height: 0;
+    &-info {
+      width: 66%;
+    }
+    &-button {
+      width: 30%;
+      display: inline-block;
+      margin-right: 1em;
+    }
+  }
+  .header-image-container {
+    right: 2.5em;
+    top: 30%;
+    height: 33vw;
   }
 }
 
 @media screen AND (min-width: 1024px) {
   .banner {
-    padding: 4em 10rem 0;
+    padding: 4em 4rem 0;
     background-position: 0 75%;
     &-subheading {
-      font-size: calc(0.95 * 1.5em);
+      font-size: 1.25em;
     }
     &-heading {
       padding-top: 0;
-      font-size: calc(0.95 * 3em);
+      font-size: 2em;
       width: 60%;
       margin-bottom: 2rem;
       line-height: 1.25;
     }
     &-button {
       display: inline-block;
-      width: 200px;
-      padding: 1.25em 1em;
+      width: 145px;
+      padding: 0.8em;
+      font-size: 0.8em;
       &--main {
-        margin-right: 6rem;
+        margin-right: 3rem;
       }
     }
   }
 
   .header-image-container {
-    right: 11.5em;
-    top: 20%;
-    height: 450px;
-  }
-
-  .banner-button {
-    display: inline-block;
-    width: 200px;
+    top: 33%;
+    right: 6rem;
   }
 }
 
@@ -209,5 +233,21 @@ body {
   .header-image-container {
     height: 40vw;
     right: 12%;
+  }
+
+  .banner {
+    &-subheading {
+      font-size: calc(0.95 * 1.5em);
+    }
+    &-heading {
+      font-size: calc(0.95 * 3em);
+    }
+    &-button {
+      width: 200px;
+      padding: 1.25em 1em;
+      &--main {
+        margin-right: 6rem;
+      }
+    }
   }
 }

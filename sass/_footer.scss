@@ -58,3 +58,13 @@
     }
   }
 }
+
+@media screen AND (min-width: 1024px) {
+  .footer-container {
+    width: 87%;
+    h2,
+    ul {
+      padding: 0;
+    }
+  }
+}

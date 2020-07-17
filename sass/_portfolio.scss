@@ -96,8 +96,13 @@
   #portfolio h2 {
     font-size: 4em;
   }
+  .carousel-container {
+    min-height: 0;
+    width: 87%;
+  }
   .carousel-slide {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    min-height: 0;
   }
 }

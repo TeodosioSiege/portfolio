@@ -83,3 +83,9 @@
     height: 33vw;
   }
 }
+
+@media screen AND (min-width: 1024px) {
+  .flip-card {
+    height: 20vw;
+  }
+}

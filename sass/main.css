@@ -264,6 +264,7 @@ body {
 
 .banner {
   height: 75vh;
+  max-height: 768px;
   padding: 4rem 1.5em 0 1em;
   background: #1f679e;
   color: white;
@@ -271,6 +272,15 @@ body {
   background: linear-gradient(rgba(31, 103, 158, 0.52), rgba(31, 103, 158, 0.52)), url("parallax1.jpg");
   background-size: cover;
   line-height: 1.5;
+  position: relative;
+}
+
+.banner-info {
+  min-height: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .banner-link {
@@ -279,7 +289,7 @@ body {
 
 .banner-subheading {
   color: #dfdbdb;
-  padding-top: 2em;
+  padding-top: 1em;
   font-size: 1rem;
   font-weight: normal;
 }
@@ -795,6 +805,16 @@ body {
   }
   .social > * {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  html {
+    font-size: 1.5em;
+  }
+  .header-image-container {
+    height: 40vw;
+    right: 12%;
   }
 }
 /*# sourceMappingURL=main.css.map */

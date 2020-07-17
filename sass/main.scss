@@ -35,6 +35,7 @@ body {
 
 .banner {
   height: 75vh;
+  max-height: 768px;
   padding: 4rem 1.5em 0 1em;
   @include set-bg(hsl(206, 67%, 37%));
   background: linear-gradient(
@@ -44,12 +45,19 @@ body {
     url("parallax1.jpg");
   background-size: cover;
   line-height: 1.5;
+  position: relative;
+  &-info {
+    min-height: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   &-link {
     text-decoration: none;
   }
   &-subheading {
     color: #dfdbdb;
-    padding-top: 2em;
+    padding-top: 1em;
     font-size: 1rem;
     font-weight: normal;
   }
@@ -143,3 +151,13 @@ body {
 @import "portfolio";
 @import "flip-tile";
 @import "footer";
+
+@media screen and (min-width: 1500px) {
+  html {
+    font-size: 1.5em;
+  }
+  .header-image-container {
+    height: 40vw;
+    right: 12%;
+  }
+}

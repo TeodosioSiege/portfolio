@@ -110,6 +110,31 @@ body {
     }
   }
 }
+@media screen AND (min-width: 400px) {
+  .header-image-container {
+    height: 60vw;
+  }
+
+  .banner {
+    &-subheading,
+    &-heading {
+      font-size: 2em;
+    }
+    &-button {
+      width: 33vw;
+    }
+  }
+}
+@media screen AND (min-width: 550px) {
+  .banner {
+    &-info {
+      width: 80%;
+    }
+    &-button {
+      font-size: 1em;
+    }
+  }
+}
 
 @media screen AND (min-width: 1024px) {
   .banner {

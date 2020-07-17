@@ -355,6 +355,27 @@ body {
   border: none;
 }
 
+@media screen and (min-width: 400px) {
+  .header-image-container {
+    height: 60vw;
+  }
+  .banner-subheading, .banner-heading {
+    font-size: 2em;
+  }
+  .banner-button, .footer-button {
+    width: 33vw;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .banner-info {
+    width: 80%;
+  }
+  .banner-button, .footer-button {
+    font-size: 1em;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .banner {
     padding: 4em 10rem 0;

@@ -71,3 +71,9 @@
 .card-text {
   line-height: 2;
 }
+
+@media screen AND (min-width: 550px) AND (orientation: landscape) {
+  .flip-card {
+    height: 100vw;
+  }
+}

@@ -126,13 +126,23 @@ body {
   }
 }
 @media screen AND (min-width: 550px) {
+  .header {
+    min-height: 100vw;
+  }
   .banner {
     &-info {
       width: 80%;
+      height: 75%;
     }
     &-button {
       font-size: 1em;
     }
+  }
+}
+
+@media screen AND (min-width: 550px) AND (orientation: landscape) {
+  .banner {
+    min-height: 75vw;
   }
 }
 

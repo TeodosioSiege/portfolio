@@ -59,6 +59,18 @@
   }
 }
 
+@media screen AND (min-width: 550px) AND (orientation: landscape) {
+  .carousel-container {
+    min-height: 100vw;
+  }
+  .carousel-slide {
+    min-height: 100vw;
+  }
+  .flip-card {
+    height: 100vw;
+  }
+}
+
 @media screen AND (min-width: 1024px) {
   #portfolio h2 {
     font-size: 4em;

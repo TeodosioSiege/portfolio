@@ -368,11 +368,21 @@ body {
 }
 
 @media screen and (min-width: 550px) {
+  .header, .about {
+    min-height: 100vw;
+  }
   .banner-info {
     width: 80%;
+    height: 75%;
   }
   .banner-button, .footer-button {
     font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 550px) and (orientation: landscape) {
+  .banner {
+    min-height: 75vw;
   }
 }
 
@@ -622,6 +632,18 @@ body {
   outline: none;
 }
 
+@media screen and (min-width: 550px) and (orientation: landscape) {
+  .carousel-container {
+    min-height: 100vw;
+  }
+  .carousel-slide {
+    min-height: 100vw;
+  }
+  .flip-card {
+    height: 100vw;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   #portfolio h2 {
     font-size: 4em;
@@ -749,6 +771,12 @@ body {
 
 .card-text {
   line-height: 2;
+}
+
+@media screen and (min-width: 550px) and (orientation: landscape) {
+  .flip-card {
+    height: 100vw;
+  }
 }
 
 .footer {

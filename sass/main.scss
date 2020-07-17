@@ -146,6 +146,12 @@ body {
   }
 }
 
+@media screen AND (min-width: 650px) AND (orientation: landscape) {
+  .header-image-container {
+    height: 300px;
+  }
+}
+
 @media screen AND (min-width: 1024px) {
   .banner {
     padding: 4em 10rem 0;

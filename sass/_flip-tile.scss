@@ -72,8 +72,14 @@
   line-height: 2;
 }
 
-@media screen AND (min-width: 550px) AND (orientation: landscape) {
+@media screen AND (min-width: 550px) AND (max-width: 649px) AND (orientation: landscape) {
   .flip-card {
     height: 100vw;
+  }
+}
+
+@media screen AND (min-width: 650px) {
+  .flip-card {
+    height: 33vw;
   }
 }

@@ -123,3 +123,9 @@
     transform: scale(1.5);
   }
 }
+
+@media screen AND (min-width: 1700px) {
+  .about {
+    font-size: 2em;
+  }
+}

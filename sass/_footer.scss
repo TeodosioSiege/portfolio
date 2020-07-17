@@ -68,3 +68,19 @@
     }
   }
 }
+@media screen AND (min-width: 1200px) {
+  .footer-button {
+    width: 100% !important;
+  }
+}
+
+@media screen AND (min-width: 1500px) {
+  .footer {
+    h2 {
+      font-size: 3em;
+    }
+    ul {
+      font-size: 1.75em;
+    }
+  }
+}

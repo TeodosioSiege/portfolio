@@ -610,6 +610,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1700px) {
+  .about {
+    font-size: 2em;
+  }
+}
+
 .portfolio {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -933,19 +939,28 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-button {
+    width: 100% !important;
+  }
+}
+
 @media screen and (min-width: 1500px) {
-  html {
-    font-size: 1.5em;
+  .footer h2 {
+    font-size: 3em;
   }
-  .header-image-container {
-    height: 40vw;
-    right: 12%;
+  .footer ul {
+    font-size: 1.75em;
   }
+}
+
+@media screen and (min-width: 1200px) {
   .banner-subheading {
-    font-size: calc(0.95 * 1.5em);
+    font-size: calc(0.95 * 2em);
   }
   .banner-heading {
-    font-size: calc(0.95 * 3em);
+    font-size: calc(0.95 * 3.5em);
+    width: 80%;
   }
   .banner-button, .footer-button {
     width: 200px;
@@ -953,6 +968,21 @@ body {
   }
   .banner-button--main {
     margin-right: 6rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .banner-heading {
+    font-size: 4em;
+  }
+  .banner-subheading {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .banner {
+    font-size: 1.25em;
   }
 }
 /*# sourceMappingURL=main.css.map */

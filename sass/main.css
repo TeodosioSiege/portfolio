@@ -392,6 +392,15 @@ body {
   }
 }
 
+@media screen and (min-width: 700px) {
+  .header, .about {
+    min-height: 768px;
+  }
+  .banner {
+    height: 100vw;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .banner {
     padding: 4em 10rem 0;
